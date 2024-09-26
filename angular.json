@@ -30,6 +30,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/style/color.scss",
               "src/styles.scss"
             ],
             "scripts": []
