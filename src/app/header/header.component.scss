@@ -1,11 +1,12 @@
 @import './../../styles.scss';
 
-section {
+header {
+    @include side-space;
     position: static;
     top: 0;
     right: 0;
     left: 0;
-    padding: 37px 100px;
+    height: 110px;
     @include d-flex(space-between, center);
 
     >div {

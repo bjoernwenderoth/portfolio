@@ -23,6 +23,11 @@ body a {
   align-items: $ai;
 }
 
+@mixin side-space {
+  padding-left: 37px;
+  padding-right: 37px;
+}
+
 
 
 // FONTS

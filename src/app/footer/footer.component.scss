@@ -1,0 +1,59 @@
+@import './../../styles.scss';
+
+footer {
+    @include side-space;
+    width: 100vw;
+    height: 290px;
+    border-top: 4px solid $color-accent;
+    @include d-flex(center, space-between);
+    flex-direction: column;
+
+    >div {
+        @include d-flex(space-between, center);
+
+        >img {
+            width: 214px;
+        }
+
+        >span {
+            font-size: 23px;
+        }
+    }
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+
+    a img {
+        width: 30px;
+        height: 30px;
+        transition: transform 0.3s ease;
+    }
+
+    a:hover img {
+        transform: scale(1.33); // Increases the size by 33% (30px * 1.33 = 40px)
+    }
+}
+
+.impressum {
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+    width: 56px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: $color-accent;
+        transition: width 0.6s ease;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
