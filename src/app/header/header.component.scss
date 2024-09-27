@@ -1,0 +1,23 @@
+@import './../../styles.scss';
+
+section {
+    position: static;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 37px 100px;
+    @include d-flex(space-between, center);
+
+    >div {
+        @include d-flex(center, center);
+        gap: 30px;
+    }
+}
+
+a {
+    transition: color 0.3s;
+
+    &:hover {
+        color: $color-primary;
+    }
+}
