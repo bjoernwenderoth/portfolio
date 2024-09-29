@@ -1,0 +1,129 @@
+@import './../../../styles.scss';
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    margin-bottom: 200px;
+}
+
+.container-top {
+    @include d-flex(space-between, center);
+    flex-direction: row;
+    padding-right: 100px
+}
+
+.profil-picture-container {
+    @include d-flex(center, center);
+    flex-direction: row;
+    background-image: url(./../../../assets/img/background-images/blur_group.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    >img {
+        height: 100vh;
+        object-fit: contain;
+    }
+}
+
+.profil-text-container {
+    @include d-flex(flex-start, center);
+    flex-direction: column;
+    height: 320px;
+    z-index: 5;
+
+    >div {
+        @include d-flex(center, center);
+        flex-direction: row;
+
+        >h2 {
+            font-size: 54px;
+            margin-right: -20px;
+            transform: rotate(-90deg);
+            text-wrap: nowrap;
+        }
+    }
+}
+
+
+.name-title {
+    @include d-flex(center, center);
+    flex-direction: column;
+    text-wrap: nowrap;
+
+    >h1 {
+        font-size: 60px;
+    }
+
+    >h2.purple {
+        font-size: 56.5px;
+        margin-top: -15px;
+        color: $color-blue;
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadeInUp 1.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+button {
+    @include button-bg($color-accent, $color-blue);
+    margin-top: 30px;
+    z-index: 2;
+}
+
+.social-scroll-container {
+    @include d-flex(center, flex-end);
+    max-width: 100vw;
+    z-index: 1;
+}
+
+.social-links {
+    @include d-flex(flex-start, center);
+    width: 100vw;
+    gap: 42px;
+    z-index: 1;
+
+    >div {
+            width: 100px;
+            height: 4px;
+            background-color: $color-blue;
+        
+    }
+}
+
+.scroll-down {
+    @include d-flex(center, center);
+    gap: 8px;
+    font-size: 23px;
+    text-wrap: nowrap;
+    rotate: 90deg;
+    margin-bottom: 100px;
+    z-index: 1;
+
+    >img {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.bow-hero {
+    position: absolute;
+    top: 35vh;
+    z-index: -1;
+}
+
+

@@ -2,11 +2,12 @@
 
 footer {
     @include side-space;
+    @include d-flex(center, space-between);
     width: 100vw;
     height: 290px;
     border-top: 4px solid $color-accent;
-    @include d-flex(center, space-between);
     flex-direction: column;
+    max-width: 1920px;
 
     >div {
         @include d-flex(space-between, center);
