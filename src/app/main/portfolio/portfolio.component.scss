@@ -1,0 +1,32 @@
+@import './../../../styles.scss';
+
+section {
+    @include d-flex(flex-end, flex-end);
+    flex-direction: column;
+    padding-left: 100px;
+    width: 100%;
+    margin-bottom: 200px;
+
+    >div {
+        @include d-flex(center, flex-start);
+        flex-direction: column;
+
+        >div {
+            @include d-flex(center, center);
+            gap: 30px;
+        }
+    }
+}
+
+.line {
+    width: 109px;
+    height: 4px;
+    background-color: $color-accent;
+}
+
+.max-line {
+    width: 100vw;
+    max-width: 484px;
+    height: 4px;
+    background-color: $color-accent;
+}

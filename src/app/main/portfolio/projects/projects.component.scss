@@ -1,0 +1,44 @@
+@import './../../../../styles.scss';
+
+section {
+    @include side-space;
+    @include d-flex(center, center);
+    gap: 30px;
+    margin-bottom: -50px;
+
+    >div {
+        >div {
+            @include d-flex(flex-start, center);
+            padding-top: 35px;
+            gap: 86px;
+
+            >button:not(.button-outline) {
+                @include button-bg($color-blue, $color-accent);
+            }
+        }
+    }
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: $color-blue;
+    line-height: 80px;
+}
+
+h3 {
+    font-size: 23px;
+    font-weight: 400;
+    color: $color-accent;
+}
+
+.button-outline {
+    background-color: transparent !important;
+    border: 1px solid $color-accent;
+    transition:  border 0.3s ease;
+
+    &:hover {
+        background-color: transparent !important;
+        border: 1px solid $color-blue;
+    }
+}

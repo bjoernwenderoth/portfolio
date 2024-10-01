@@ -1,0 +1,32 @@
+<section *ngFor="let project of projects; let i = index">
+    <!-- Überprüfe, ob der Index gerade oder ungerade ist -->
+    <ng-container *ngIf="i % 2 === 0; else reverseLayout">
+      <!-- Wenn der Index gerade ist, zuerst das Bild, dann die Beschreibung -->
+      <img src="./../../../../assets/img/{{ project.img }}.png" alt="{{ project.img }}">
+      <div>
+        <h2>{{ project.title }}</h2>
+        <h3>{{ project.technologies }}</h3>
+        <p>{{ project.description }}</p>
+        <div>
+          <button (click)="goToLink(project.liveTestLink)">Live test</button>
+          <button class="button-outline" (click)="goToLink(project.githubLink)">Github</button>
+        </div>
+      </div>
+    </ng-container>
+  
+    <!-- Alternativer Block für ungerade Indizes -->
+    <ng-template #reverseLayout>
+      <!-- Wenn der Index ungerade ist, zuerst die Beschreibung, dann das Bild -->
+      <div>
+        <h2>{{ project.title }}</h2>
+        <h3>{{ project.technologies }}</h3>
+        <p>{{ project.description }}</p>
+        <div>
+          <button (click)="goToLink(project.liveTestLink)">Live test</button>
+          <button class="button-outline" (click)="goToLink(project.githubLink)">Github</button>
+        </div>
+      </div>
+      <img src="./../../../../assets/img/{{ project.img }}.png" alt="{{ project.img }}">
+    </ng-template>
+  </section>
+  
