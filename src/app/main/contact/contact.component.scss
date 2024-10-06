@@ -1,0 +1,90 @@
+@import './../../../styles.scss';
+
+section {
+    @include d-flex(space-between, center);
+    flex-direction: column;
+    width: 100vw;
+    margin-bottom: 200px;
+
+    >div {
+        @include d-flex(flex-start, center);
+        flex-direction: row;
+        gap: 30px;
+        width: 100vw;
+        margin-bottom: 50px;
+
+        >.line {
+            width: calc(50% - 300px);
+            height: 4px;
+            background-color: $color-blue;
+        }
+
+    }
+
+    .text-container {
+        @include d-flex(center, flex-start);
+        flex-direction: column;
+        text-align: start;
+        gap: 38px;
+        padding-left: 100px;
+
+        >h2 {
+            font-size: 32px;
+            font-weight: 700;
+
+        }
+    }
+
+    .container {
+        display: grid;
+        align-items: flex-start;
+        grid-template-columns: 1fr 1fr;
+        gap: 200px;
+    }
+
+    .form-container {
+        padding-right: 100px;
+
+        >form {
+            @include d-flex(flex-start, flex-start);
+            flex-direction: column;
+        }
+    }
+
+    mat-form-field {
+        width: 100%;
+        max-width: 620px;
+        margin-bottom: 8px;
+    }
+
+    .textarea {
+        height: 200px;
+    }
+}
+
+a {
+    color: $color-blue;
+    font-weight: bold;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+button {
+    @include button-bg($color-accent, $color-blue);
+    margin-top: 30px;
+
+    &[disabled] {
+        background-color: grey;
+        color: white;
+        cursor: not-allowed;
+      }
+}
+
+img {
+    position: absolute;
+    left: -300px;
+    bottom: -300px;
+    rotate: -30deg;
+}

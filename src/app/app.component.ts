@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
+import { ImprintComponent } from './imprint/imprint.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,8 @@ import { MainComponent } from './main/main.component';
     RouterOutlet,
     HeaderComponent,
     MainComponent,
-    FooterComponent,],
+    FooterComponent,
+    ImprintComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

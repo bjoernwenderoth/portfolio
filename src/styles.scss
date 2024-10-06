@@ -6,6 +6,9 @@
   margin: 0;
   font-family: Poppins;
   color: white;
+  scroll-behavior: smooth;
+  scroll-padding: 150px;
+  max-width: 1920px;
 }
 
 
@@ -38,8 +41,8 @@ body a {
   }
 }
 
+
 button {
-  // @include button-bg($color-accent, $color-blue);
   @include d-flex(center, center);
   cursor: pointer;
   width: auto;
@@ -48,4 +51,8 @@ button {
   border-radius: 10px;
   border: none;
   font-size: 23px;
+  text-wrap: nowrap;
 }
+
+
+

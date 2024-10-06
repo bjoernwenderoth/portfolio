@@ -1,1 +1,25 @@
-<p>skills works!</p>
+<section>
+    <img src="./../../../assets/img/background-images/blue_blur_skills.png" alt="blue_blur_skills">
+    <div class="logo-container">
+        <div class="logo" *ngFor="let logo of logos">
+            <img [src]="logo.imgSrc" [alt]="logo.altText">
+            <span>{{ logo.labelText }}</span>
+        </div>
+        <div class="logo">
+            <img src="./../../../assets/img/icons/learning_icon.png" alt="learning_icon">
+            <span style="color: #4B47FF">Continually learning</span>
+        </div>
+    </div>
+
+    <div class="text-container">
+        <div class="headline">
+            <h1>My Skills</h1>
+            <div class="line"></div>
+        </div>
+        <div class="text">
+            <p>Ich habe meine Fähigkeiten im Bereich der Frontend-Entwicklung ausgebaut, die es mir ermöglicht haben,
+                verschiedene reale Projekte zu erstellen.</p>
+            <button>Kontakt aufnehmen</button>
+        </div>
+    </div>
+</section>

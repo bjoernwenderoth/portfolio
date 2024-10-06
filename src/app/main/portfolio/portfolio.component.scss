@@ -7,6 +7,14 @@ section {
     width: 100%;
     margin-bottom: 200px;
 
+    >img {
+        position: absolute;
+        top: 3200px;
+        right: 50px;
+        width: 50%;
+        z-index: -1;
+    }
+
     >div {
         @include d-flex(center, flex-start);
         flex-direction: column;

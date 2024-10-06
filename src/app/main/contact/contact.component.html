@@ -1,1 +1,59 @@
-<p>contact works!</p>
+<section id="contact">
+  <img src="./../../../assets/img/background-images/contact_blur.png" alt="contact_blur">
+    <div>
+        <div class="line"></div>
+        <h1>Contact</h1>
+    </div>
+
+    <div class="container">
+        <div class="text-container">
+            <h2>Got a problem to solve?</h2>
+            <span>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing
+                to
+                your projects with my work.</span>
+            <span>Need a Frontend developer? <b>Contact me!</b></span>
+
+        </div>
+
+
+        <div class="form-container">
+            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+          
+              <!-- Name Input -->
+              <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input [(ngModel)]="contactData.name" name="name" matInput placeholder="Placeholder" required>
+              </mat-form-field>
+          
+              <!-- E-Mail Input -->
+              <mat-form-field appearance="outline">
+                <mat-label>Enter your E-mail</mat-label>
+                <input [(ngModel)]="contactData.email" name="email"
+                       pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                       matInput placeholder="pat@example.com" required />
+                <mat-error *ngIf="email.invalid">{{errorMessage()}}</mat-error>
+              </mat-form-field>
+          
+              <!-- Textarea Input -->
+              <mat-form-field appearance="outline">
+                <mat-label>Textarea</mat-label>
+                <textarea class="textarea" [(ngModel)]="contactData.message" name="message" minlength="5"
+                          matInput placeholder="Your message" required></textarea>
+              </mat-form-field>
+          
+              <!-- Checkbox -->
+              <mat-checkbox [(ngModel)]="contactData.privacy" name="privacy" required>
+                I've read the <a href="#datenschutz">privacy policy</a> and agree to the processing of my data as outlined.
+              </mat-checkbox>
+          
+              <!-- Submit Button -->
+              <button mat-raised-button color="primary" [disabled]="!contactForm.form.valid || !contactData.privacy">
+                Send message :)
+              </button>
+          
+            </form>
+          </div>
+          
+
+    </div>
+</section>

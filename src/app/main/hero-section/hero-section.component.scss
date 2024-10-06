@@ -3,13 +3,12 @@
 section {
     position: relative;
     width: 100%;
-    min-height: 100vh;
     height: auto;
     margin-bottom: 200px;
 }
 
 .container-top {
-    @include d-flex(space-between, center);
+    @include d-flex(flex-start, center);
     flex-direction: row;
     padding-right: 100px
 }
@@ -20,11 +19,12 @@ section {
     background-image: url(./../../../assets/img/background-images/blur_group.png);
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat;
+
 
     >img {
-        height: 100vh;
-        object-fit: contain;
+        width: 705px;
+        height: auto;
+
     }
 }
 
@@ -39,8 +39,8 @@ section {
         flex-direction: row;
 
         >h2 {
-            font-size: 54px;
-            margin-right: -20px;
+            font-size: 56px;
+            margin-right: -25px;
             transform: rotate(-90deg);
             text-wrap: nowrap;
         }
@@ -54,12 +54,12 @@ section {
     text-wrap: nowrap;
 
     >h1 {
-        font-size: 60px;
+        font-size: 70px;
     }
 
     >h2.purple {
-        font-size: 56.5px;
-        margin-top: -15px;
+        font-size: 66px;
+        margin-top: -30px;
         color: $color-blue;
         opacity: 0;
         transform: translateY(10px);
@@ -96,12 +96,22 @@ button {
     width: 100vw;
     gap: 42px;
     z-index: 1;
+    font-size: 23px;
 
     >div {
-            width: 100px;
-            height: 4px;
-            background-color: $color-blue;
-        
+        width: 100px;
+        height: 4px;
+        background-color: $color-blue;
+    }
+
+    a img {
+        width: 30px;
+        height: 30px;
+        transition: transform 0.3s ease;
+    }
+
+    a:hover img {
+        transform: scale(1.33); // Increases the size by 33% (30px * 1.33 = 40px)
     }
 }
 
@@ -122,8 +132,7 @@ button {
 
 .bow-hero {
     position: absolute;
-    top: 35vh;
-    z-index: -1;
+    width: 1920px;
+    top: 190px;
+    z-index: -1
 }
-
-

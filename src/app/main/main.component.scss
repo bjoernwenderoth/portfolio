@@ -1,6 +1,8 @@
 @import './../../styles.scss';
+
 main {
-    max-width: 1920px;
     margin-top: 110px;
-    height: 2000px;
+    position: relative;
+    overflow: hidden;
+    max-width: 1920px;
 }

@@ -1,0 +1,78 @@
+@import './../../../styles.scss';
+
+section {
+    padding-left: 100px;
+    width: 100%;
+    height: 100%;
+    @include d-flex(flex-end, baseline);
+    margin-bottom: 200px;
+
+    >img {
+        position: absolute;
+        top: 1900px;
+        left: -650px;
+        rotate: 200deg;
+        transform: scaleX(-1);
+        z-index: -1;
+    }
+}
+
+.logo-container {
+    @include d-flex(flex-start, center);
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    @include d-flex(center, center);
+    width: 100px;
+    height: 100px;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.22);
+    }
+}
+
+.text-container {
+    @include d-flex(center, flex-end);
+    flex-direction: column;
+    min-width: 600px;
+    max-width: 800px;
+    margin-left: 50px;
+
+}
+
+.headline {
+    @include d-flex(flex-end, center);
+
+    >h1 {
+        text-align: end;
+        padding-right: 30px;
+    }
+}
+
+.line {
+    width: 10vw;
+    height: 4px;
+    background-color: $color-accent;
+}
+
+.text {
+    @include d-flex(center, flex-end);
+    flex-direction: column;
+    text-align: end;
+    margin-right: 12vw;
+}
+
+button {
+    @include button-bg($color-accent, $color-blue);
+    margin-top: 30px;
+    z-index: 2;
+}
