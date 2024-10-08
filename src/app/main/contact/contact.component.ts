@@ -38,14 +38,33 @@ export class ContactComponent {
       },
     },
   };
-  
+
   onSubmit(ngForm: NgForm) {
     if (ngForm.valid) {
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: "03c721ac-766b-4756-9796-c62240ef5ed9",
+          name: this.contactData.name,
+          email: this.contactData.email,
+          message: this.contactData.message,
+        })
+      })
+        .then(async (response) => {
+          let json = await response.json();
+        })
+        .catch(error => {
+          console.log(error);
+        })
       console.log('Form Submitted!', this.contactData);
-      this.http.post(this.post.endPoint, this.post.body(this.contactData)).subscribe();
+      // this.http.post(this.post.endPoint, this.post.body(this.contactData)).subscribe();
       ngForm.resetForm();
     }
-  
+
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
