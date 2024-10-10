@@ -4,7 +4,7 @@ section {
     @include side-space;
     @include d-flex(center, center);
     gap: 30px;
-    margin-bottom: -50px;
+    margin-bottom: -20px;
 
     >div {
         >div {
@@ -17,6 +17,10 @@ section {
             }
         }
     }
+}
+
+.project-img {
+    width: 40vw;
 }
 
 h2 {
@@ -40,5 +44,13 @@ h3 {
     &:hover {
         background-color: transparent !important;
         border: 1px solid $color-blue;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    section {
+
+        margin-bottom: 50px;
     }
 }

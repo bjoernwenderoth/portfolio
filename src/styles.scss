@@ -8,12 +8,15 @@
   color: white;
   scroll-behavior: smooth;
   scroll-padding: 150px;
-  max-width: 1920px;
+ 
 }
 
 
 body {
   background-color: $color-dark;
+  display: flex;
+  justify-content: center;
+
 }
 
 body a {

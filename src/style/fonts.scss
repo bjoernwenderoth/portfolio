@@ -10,6 +10,14 @@ h2 {
 }
 
 
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 70px;
+  }
+}
+
+
 /* poppins-100 - latin */
 @font-face {
     font-display: swap;

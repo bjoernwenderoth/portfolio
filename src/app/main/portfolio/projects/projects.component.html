@@ -2,7 +2,7 @@
     <!-- Überprüfe, ob der Index gerade oder ungerade ist -->
     <ng-container *ngIf="i % 2 === 0; else reverseLayout">
       <!-- Wenn der Index gerade ist, zuerst das Bild, dann die Beschreibung -->
-      <img src="./../../../../assets/img/{{ project.img }}.png" alt="{{ project.img }}">
+      <img class="project-img" src="./../../../../assets/img/{{ project.img }}.png" alt="{{ project.img }}">
       <div>
         <h2>{{ project.title }}</h2>
         <h3>{{ project.technologies }}</h3>
@@ -26,7 +26,7 @@
           <button class="button-outline" (click)="goToLink(project.githubLink)">Github</button>
         </div>
       </div>
-      <img src="./../../../../assets/img/{{ project.img }}.png" alt="{{ project.img }}">
+      <img class="project-img" src="./../../../../assets/img/{{ project.img }}.png" alt="{{ project.img }}">
     </ng-template>
   </section>
   

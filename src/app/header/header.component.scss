@@ -5,10 +5,9 @@ header {
     @include d-flex(space-between, center);
     position: fixed;
     top: 0;
-    right: 0;
-    left: 0;
     height: 110px;
     background-color: $color-dark;
+    width: 100%;
     max-width: 1920px;
     font-size: 23px;
     z-index: 1000;

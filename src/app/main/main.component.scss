@@ -5,4 +5,7 @@ main {
     position: relative;
     overflow: hidden;
     max-width: 1920px;
+    @include d-flex(center, center);
+    flex-direction: column;
+    width: 100vw;
 }

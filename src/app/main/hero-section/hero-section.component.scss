@@ -5,12 +5,14 @@ section {
     width: auto;
     height: 100%;
     margin-bottom: 150px;
-    margin-top: 20px
+    margin-top: 20px;
+    max-width: 1920px
 }
 
 .container-top {
     @include d-flex(flex-start, center);
-    padding-right: 100px
+    width: 100vw;
+    padding-right: 11vw;
 }
 
 .profil-picture-container {
@@ -22,28 +24,32 @@ section {
     background-repeat: no-repeat;
     max-height: 90%;
     z-index: -2;
+    flex: 1;
+    max-width: 50%;
 
     >img {
 
-        max-height: 85vh; // Begrenzt die Höhe auf 85% der Viewport-Höhe
+        max-height: 80vh; // Begrenzt die Höhe auf 85% der Viewport-Höhe
         width: auto; // Stellt sicher, dass die Breite automatisch angepasst wird, wenn die Höhe priorisiert wird
         height: auto; // Stellt sicher, dass die Höhe automatisch angepasst wird, wenn die Breite priorisiert wird
     }
 }
 
 .profil-text-container {
-    @include d-flex(flex-start, center);
+    @include d-flex(center, center);
     flex-direction: column;
-    height: 330px;
     z-index: 5;
+    flex: 1;
+    max-width: 50%;
+    padding-bottom: 50px;
 
     >div {
         @include d-flex(center, center);
         flex-direction: row;
 
         >h2 {
-            font-size: 56px;
-            margin-right: -25px;
+            font-size: 3.25vw;
+            margin-right: -1.7vw;
             transform: rotate(-90deg);
             text-wrap: nowrap;
         }
@@ -57,12 +63,12 @@ section {
     text-wrap: nowrap;
 
     >h1 {
-        font-size: 70px;
+        font-size: 4.2vw;
     }
 
     >h2.purple {
-        font-size: 66px;
-        margin-top: -30px;
+        font-size: 3.95vw;
+        margin-top: -2vw;
         color: $color-blue;
         opacity: 0;
         transform: translateY(10px);
@@ -84,22 +90,24 @@ section {
 
 button {
     @include button-bg($color-accent, $color-blue);
-    margin-top: 30px;
+    margin-top: 1vw;
     z-index: 2;
 }
 
 .social-scroll-container {
     @include d-flex(center, center);
-    max-width: 100vw;
+    width: 100%;
     z-index: 1;
+    margin-top: 5vh;
 }
 
 .social-links {
     @include d-flex(flex-start, center);
-    width: 100vw;
+    width: 100%;
     gap: 42px;
     z-index: 1;
     font-size: 23px;
+
 
     >div {
         width: 100px;
@@ -136,8 +144,8 @@ button {
 .bow-hero {
     position: absolute;
     height: 100vh;
-    width: 100%;
-    top: 42%;
+    width: 1920px;
+    top: 33%;
     z-index: -1;
 }
 
@@ -145,87 +153,126 @@ button {
 
 // DESKTOP
 
-@media (max-width: 1500px) {
+// @media (max-width: 1600px) {
 
-    .profil-text-container {
-        >div {
-            >h2 {
-                font-size: 46px;
-            }
-        }
-    }
+//     .profil-text-container {
+//         >div {
+//             >h2 {
+//                 font-size: 46px;
+//             }
+//         }
+//     }
 
-    .name-title {
-        >h1 {
-            font-size: 60px;
-        }
+//     .name-title {
+//         >h1 {
+//             font-size: 60px;
+//         }
 
-        >h2.purple {
-            font-size: 56.5px;
-        }
-    }
-}
+//         >h2.purple {
+//             font-size: 56.5px;
+//         }
+//     }
+// }
 
-@media (max-width: 1400px) {
+// @media (max-width: 1500px) {
 
-    .profil-picture-container {
-        >img {
-            max-height: 75vh;
-        }
-    }
+//     .profil-picture-container {
+//         >img {
+//             max-height: 75vh;
+//         }
+//     }
 
-    .bow-hero {
-        top: 30%;
-    }
+//     .bow-hero {
+//         top: 30%;
+//     }
 
-    .profil-text-container {
-        >div {
-            >h2 {
-                font-size: 38px;
-                margin-right: -17px;
-            }
-        }
-    }
+//     .profil-text-container {
+//         >div {
+//             >h2 {
+//                 font-size: 38px;
+//                 margin-right: -17px;
+//             }
+//         }
+//     }
 
-    .name-title {
-        >h1 {
-            font-size: 47px;
-        }
+//     .name-title {
+//         >h1 {
+//             font-size: 47px;
+//         }
 
-        >h2.purple {
-            font-size: 45px;
-            margin-top: -20px;
-        }
-    }
+//         >h2.purple {
+//             font-size: 45px;
+//             margin-top: -20px;
+//         }
+//     }
 
-    button {
-        margin-top: 20px;
-    }
-}
+//     button {
+//         margin-top: 20px;
+//     }
+// }
 
-@media (max-width: 1300px) {
+// @media (max-width: 1400px) {
 
-    .profil-picture-container {
-        >img {
-            max-height: 65vh;
-        }
-    }
+//     .profil-picture-container {
+//         >img {
+//             max-height: 60vh;
+//         }
+//     }
 
-    .bow-hero {
-        top: 21%;
-    }
-}
+//     .bow-hero {
+//         top: 21%;
+//     }
+// }
 
 
-@media (max-width: 1200px) {
+// @media (max-width: 1200px) {
 
-    .profil-picture-container {
-        >img {
-            max-height: 45vh;
-        }
-    }
+//     .profil-picture-container {
+//         >img {
+//             max-height: 45vh;
+//         }
+//     }
 
-    .bow-hero {
-        top: 5%;
-    }
-}
+//     .bow-hero {
+//         top: 5%;
+//     }
+// }
+
+
+// // Für Tablets
+// @media (min-width: 769px) and (max-width: 1024px) {
+//     .profil-picture-container {
+//         >img {
+//             max-height: 65vh;
+//         }
+//     }
+
+//     .bow-hero {
+//         top: 25%;
+//     }
+
+//     .profil-text-container {
+//         >div {
+//             >h2 {
+//                 font-size: 38px;
+//                 margin-right: -17px;
+//             }
+//         }
+//     }
+
+//     .name-title {
+//         >h1 {
+//             font-size: 47px;
+//         }
+
+//         >h2.purple {
+//             font-size: 45px;
+//             margin-top: -20px;
+//         }
+//     }
+
+//     button {
+//         margin-top: 20px;
+//     }
+
+// }
