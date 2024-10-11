@@ -7,7 +7,7 @@ section {
     padding-left: 100px;
     gap: 100px;
     margin-bottom: 200px;
-    
+
     >img {
         position: absolute;
         top: 630px;
@@ -25,12 +25,13 @@ section {
         @include d-flex(center, center);
         gap: 35px;
         padding: 30px 30px 0px 30px;
-      
+
         >img {
             transition: transform 0.3s ease;
+
             &:hover {
                 transform: scale(1.22);
-            }   
+            }
         }
     }
 }
@@ -53,5 +54,55 @@ section {
         width: 40%;
         height: 4px;
         background-color: $color-accent;
+    }
+}
+
+
+// -------------------- MEDIA -------------------- //
+
+// DESKTOP
+
+// @media (max-width: 1100px) {
+//     .container-top {
+//         padding-right: 6vw;
+//     }
+
+//     .profil-picture-container {
+
+//         >img {
+
+//             max-height: 55vh;
+//         }
+//     }
+
+//     .bow-hero {
+//         top: 20%;
+//     }
+// }
+
+// Mobile
+
+@media (max-width: 769px) {
+
+    section {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .text-container {
+        max-width: 100%;
+
+        >div {
+            padding: 60px 0px 0px 30px;
+
+            >img {
+                width: 50px;
+                height: auto;
+            }
+        }
+    }
+
+    .picture-container {
+        display: none;
     }
 }

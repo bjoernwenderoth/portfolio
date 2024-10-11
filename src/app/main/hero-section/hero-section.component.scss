@@ -172,6 +172,7 @@ button {
     }
 }
 
+// Mobile
 
 @media (max-width: 769px) {
 
@@ -227,7 +228,7 @@ button {
 
 
     .social-links {
-
+        @include d-flex(flex-start, center);
         justify-content: center;
 
         >div {
