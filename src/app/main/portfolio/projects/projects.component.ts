@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
@@ -35,6 +35,21 @@ export class ProjectsComponent {
       githubLink: '#',   // Link zum GitHub-Repository
     }
   ];
+
+  screenWidth: number;
+
+  constructor() {
+    this.screenWidth = window.innerWidth;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    this.screenWidth = (event.target as Window).innerWidth;
+  }
+
+  isWideScreen(): boolean {
+    return this.screenWidth > 770; // Überprüfung der Bildschirmbreite
+  }
   
   goToLink(url: string) {
     window.open(url, '_blank');

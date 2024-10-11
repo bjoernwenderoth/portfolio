@@ -79,7 +79,7 @@ button {
         background-color: grey;
         color: white;
         cursor: not-allowed;
-      }
+    }
 }
 
 img {
@@ -87,4 +87,41 @@ img {
     left: -300px;
     bottom: -300px;
     rotate: -30deg;
+    z-index: -1;
+}
+
+
+// -------------------- MEDIA -------------------- //
+
+
+// Mobile
+
+@media (max-width: 769px) {
+
+    section {
+        margin-bottom: 100px;
+
+        .text-container {
+            gap: 20px;
+            padding-left: 0px;
+            margin-bottom: 80px;
+        }
+
+        .container {
+            display: flex;
+            grid-template-columns: none;
+            flex-direction: column;
+            gap: 0;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .form-container {
+            padding-right: 0px;
+
+            >form {
+                align-items: center;
+            }
+        }
+    }
 }

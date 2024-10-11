@@ -9,7 +9,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent {
-  // Logos array containing the data for each logo
   logos = [
     { imgSrc: './../../../assets/img/icons/html_icon.png', altText: 'html_icon', labelText: 'HTML' },
     { imgSrc: './../../../assets/img/icons/css_icon.png', altText: 'css_icon', labelText: 'CSS' },
@@ -22,4 +21,24 @@ export class SkillsComponent {
     { imgSrc: './../../../assets/img/icons/scrum_icon.png', altText: 'scrum_icon', labelText: 'Scrum' },
     { imgSrc: './../../../assets/img/icons/material_design_icon.png', altText: 'material_design_icon', labelText: 'Material Design' },
   ];
+
+  ngAfterViewInit() {
+    this.toggleButtonVisibility();
+    window.addEventListener('resize', this.toggleButtonVisibility.bind(this));
+  }
+
+  toggleButtonVisibility() {
+    const upperButton = document.getElementById('btnContactMobile') as HTMLButtonElement | null;
+    const lowerButton = document.getElementById('btnContact') as HTMLButtonElement | null;
+
+    if (window.innerWidth <= 769) {
+      if (upperButton) upperButton.classList.remove('d-none');
+      if (lowerButton) lowerButton.classList.add('d-none');
+    } else {
+      if (upperButton) upperButton.classList.add('d-none');
+      if (lowerButton) lowerButton.classList.remove('d-none');
+    }
+  }
+  
 }
+

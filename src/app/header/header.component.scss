@@ -17,10 +17,13 @@ header {
         height: auto;
     }
 
-    >div {
-        @include d-flex(center, center);
-        gap: 30px;
-    }
+}
+
+
+.links {
+    @include d-flex(center, center);
+    gap: 30px;
+
 }
 
 a {
@@ -28,5 +31,61 @@ a {
 
     &:hover {
         color: $color-primary;
+    }
+}
+
+// -------------------- MEDIA -------------------- //
+
+
+// Mobile
+
+
+@media (max-width: 769px) {
+    header {
+        height: 100px;
+        padding-left: 25px;
+        padding-right: 25px;
+
+        >img {
+            width: 120px;
+        }
+    }
+
+    .links {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+        padding: 30px 10px 30px 30px;
+
+        >img {
+            width: 30px;
+            height: auto;
+        }
+    }
+
+    .menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: -100vh;
+        right: 0;
+        left: 0;
+        background-color: rgb(71, 71, 71);
+        z-index: 100;
+        font-size: 23px;
+        overflow: hidden;
+
+        >div {
+            width: 100vw;
+            height: 100vh;
+            @include d-flex(center, center);
+            flex-direction: column;
+            gap: 30px;
+            overflow: hidden;
+
+        }
+    
     }
 }

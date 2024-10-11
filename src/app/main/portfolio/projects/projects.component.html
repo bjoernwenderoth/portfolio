@@ -1,8 +1,6 @@
 <section *ngFor="let project of projects; let i = index">
-    <!-- Überprüfe, ob der Index gerade oder ungerade ist -->
-    <ng-container *ngIf="i % 2 === 0; else reverseLayout">
-      <!-- Wenn der Index gerade ist, zuerst das Bild, dann die Beschreibung -->
-      <img class="project-img" src="./../../../../assets/img/{{ project.img }}.png" alt="{{ project.img }}">
+    <ng-container *ngIf="isWideScreen() && i % 2 === 0; else reverseLayout">
+      <img src="./../../../../assets/img/{{ project.img }}.png" alt="{{ project.img }}">
       <div>
         <h2>{{ project.title }}</h2>
         <h3>{{ project.technologies }}</h3>
@@ -13,10 +11,8 @@
         </div>
       </div>
     </ng-container>
-  
-    <!-- Alternativer Block für ungerade Indizes -->
+
     <ng-template #reverseLayout>
-      <!-- Wenn der Index ungerade ist, zuerst die Beschreibung, dann das Bild -->
       <div>
         <h2>{{ project.title }}</h2>
         <h3>{{ project.technologies }}</h3>
