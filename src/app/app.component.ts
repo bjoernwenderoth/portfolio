@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { ImprintComponent } from './imprint/imprint.component';
+import { routes } from './app.routes'; //
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,9 @@ import { ImprintComponent } from './imprint/imprint.component';
     HeaderComponent,
     MainComponent,
     FooterComponent,
-    ImprintComponent],
+    ImprintComponent,
+    RouterModule,
+  ImprintComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

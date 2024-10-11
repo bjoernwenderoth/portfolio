@@ -8,7 +8,7 @@
   color: white;
   scroll-behavior: smooth;
   scroll-padding: 150px;
- 
+
 }
 
 
@@ -63,5 +63,13 @@ button {
   button {
     height: 48px;
     font-size: 18px;
+  }
+}
+
+@media (max-width: 450px) {
+  button {
+    height: 42px;
+    font-size: 16px;
+    padding: 10px 20px;
   }
 }

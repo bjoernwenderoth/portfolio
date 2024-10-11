@@ -116,6 +116,7 @@ button {
     }
 
     a img {
+        @include d-flex(center, center);
         width: 30px;
         height: 30px;
         transition: transform 0.3s ease;
@@ -153,126 +154,115 @@ button {
 
 // DESKTOP
 
-// @media (max-width: 1600px) {
+@media (max-width: 1100px) {
+    .container-top {
+        padding-right: 6vw;
+    }
 
-//     .profil-text-container {
-//         >div {
-//             >h2 {
-//                 font-size: 46px;
-//             }
-//         }
-//     }
+    .profil-picture-container {
 
-//     .name-title {
-//         >h1 {
-//             font-size: 60px;
-//         }
+        >img {
 
-//         >h2.purple {
-//             font-size: 56.5px;
-//         }
-//     }
-// }
+            max-height: 55vh;
+        }
+    }
 
-// @media (max-width: 1500px) {
-
-//     .profil-picture-container {
-//         >img {
-//             max-height: 75vh;
-//         }
-//     }
-
-//     .bow-hero {
-//         top: 30%;
-//     }
-
-//     .profil-text-container {
-//         >div {
-//             >h2 {
-//                 font-size: 38px;
-//                 margin-right: -17px;
-//             }
-//         }
-//     }
-
-//     .name-title {
-//         >h1 {
-//             font-size: 47px;
-//         }
-
-//         >h2.purple {
-//             font-size: 45px;
-//             margin-top: -20px;
-//         }
-//     }
-
-//     button {
-//         margin-top: 20px;
-//     }
-// }
-
-// @media (max-width: 1400px) {
-
-//     .profil-picture-container {
-//         >img {
-//             max-height: 60vh;
-//         }
-//     }
-
-//     .bow-hero {
-//         top: 21%;
-//     }
-// }
+    .bow-hero {
+        top: 20%;
+    }
+}
 
 
-// @media (max-width: 1200px) {
+@media (max-width: 769px) {
 
-//     .profil-picture-container {
-//         >img {
-//             max-height: 45vh;
-//         }
-//     }
+    section {
+        width: 100vw;
+    }
 
-//     .bow-hero {
-//         top: 5%;
-//     }
-// }
+    .container-top {
+        width: auto;
+        flex-direction: column;
+        padding-right: 0;
+    }
+
+    .profil-picture-container {
+        max-width: 100%;
+
+        >img {
+            max-width: 90vw;
+            max-height: none;
+        }
+    }
+
+    .bow-hero {
+        top: 50%;
+        width: 100vw;
+        height: auto;
+    }
+
+    .profil-text-container {
+
+        padding-bottom: 50px;
+
+        >div {
+
+            >h2 {
+                font-size: 7.2vw;
+                margin-right: -2.8vw;
+                margin-left: -5vw;
+            }
+        }
+    }
+
+    .name-title {
+        >h1 {
+            font-size: 8.3vw;
+        }
+
+        >h2.purple {
+            font-size: 7.85vw;
+            margin-top: -2.8vw;
+        }
+    }
 
 
-// // Für Tablets
-// @media (min-width: 769px) and (max-width: 1024px) {
-//     .profil-picture-container {
-//         >img {
-//             max-height: 65vh;
-//         }
-//     }
+    .social-links {
 
-//     .bow-hero {
-//         top: 25%;
-//     }
+        justify-content: center;
 
-//     .profil-text-container {
-//         >div {
-//             >h2 {
-//                 font-size: 38px;
-//                 margin-right: -17px;
-//             }
-//         }
-//     }
+        >div {
+            position: absolute;
+            left: 0;
+            width: 18%;
+        }
+        >a:last-child {
+            display: none;
+        }
+    }
 
-//     .name-title {
-//         >h1 {
-//             font-size: 47px;
-//         }
+    .scroll-down {
+        display: none;
+    }
 
-//         >h2.purple {
-//             font-size: 45px;
-//             margin-top: -20px;
-//         }
-//     }
 
-//     button {
-//         margin-top: 20px;
-//     }
+}
 
-// }
+
+
+@media (max-width: 600px) {
+    .bow-hero {
+        top: 47%;
+    }
+}
+
+@media (max-width: 500px) {
+    .bow-hero {
+        top: 44%;
+    }
+}
+
+@media (max-width: 400px) {
+    .bow-hero {
+        top: 41%;
+    }
+}

@@ -11,6 +11,7 @@ footer {
 
     >div {
         @include d-flex(space-between, center);
+        flex-wrap: wrap-reverse;
 
         >img {
             width: 214px;
@@ -57,4 +58,20 @@ footer {
     &:hover::after {
         width: 100%;
     }
+}
+
+@media (max-width: 1100px) {
+    footer {
+        @include d-flex(center, center);
+        >div {
+            gap: 30px;
+            >img {
+                width: 150px;
+            }
+        }}
+
+        .impressum {
+            margin-top: 20px;
+            width:auto;
+        }
 }
