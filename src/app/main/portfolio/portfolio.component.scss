@@ -3,7 +3,7 @@
 section {
     @include d-flex(flex-end, flex-end);
     flex-direction: column;
-    padding-left: 100px;
+
     width: 100%;
     margin-bottom: 200px;
 
@@ -44,11 +44,11 @@ section {
 
 // Mobile
 
-@media (max-width: 769px) {
+@media (max-width: 1100px) {
 
     section {
         align-items: center;
-        padding-left: 25px;
+        padding-left: 0px;
         margin-bottom: 100px;
 
         >div {

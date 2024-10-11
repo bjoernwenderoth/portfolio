@@ -1,6 +1,7 @@
 @import './../../styles.scss';
 
 footer {
+    overflow: hidden;
     @include side-space;
     @include d-flex(center, space-between);
     width: 100vw;

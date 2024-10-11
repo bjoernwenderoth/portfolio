@@ -152,7 +152,55 @@ button {
 
 // -------------------- MEDIA -------------------- //
 
-// DESKTOP
+// Tablet
+
+@media (max-width: 1650px) and (max-height: 1000px) {
+
+    .container-top {
+        padding-right: 70px;
+    }
+
+    .profil-picture-container {
+
+        >img {
+            max-height: 70vh;
+        }
+    }
+
+    .bow-hero {
+        top: 28%;
+    }
+}
+
+@media (max-width: 1350px)  and (max-height: 1000px){
+
+
+    .profil-picture-container {
+
+        >img {
+            max-height: 62vh;
+        }
+    }
+
+    .bow-hero {
+        top: 22%;
+    }
+}
+
+@media (max-width: 1250px)  and (max-height: 1000px){
+
+
+    .profil-picture-container {
+
+        >img {
+            max-height: 57vh;
+        }
+    }
+
+    .bow-hero {
+        top: 18%;
+    }
+}
 
 @media (max-width: 1100px) {
     .container-top {
@@ -168,7 +216,7 @@ button {
     }
 
     .bow-hero {
-        top: 20%;
+        top: 14%;
     }
 }
 
@@ -196,7 +244,7 @@ button {
     }
 
     .bow-hero {
-        top: 50%;
+        top: 54%;
         width: 100vw;
         height: auto;
     }
@@ -236,6 +284,7 @@ button {
             left: 0;
             width: 18%;
         }
+
         >a:last-child {
             display: none;
         }
@@ -252,18 +301,18 @@ button {
 
 @media (max-width: 600px) {
     .bow-hero {
-        top: 47%;
+        top: 51%;
     }
 }
 
 @media (max-width: 500px) {
     .bow-hero {
-        top: 44%;
+        top: 50%;
     }
 }
 
 @media (max-width: 400px) {
     .bow-hero {
-        top: 41%;
+        top: 48%;
     }
 }

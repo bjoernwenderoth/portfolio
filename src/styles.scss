@@ -8,15 +8,12 @@
   color: white;
   scroll-behavior: smooth;
   scroll-padding: 150px;
-
 }
-
 
 body {
   background-color: $color-dark;
   display: flex;
   justify-content: center;
-
 }
 
 body a {
@@ -44,7 +41,6 @@ body a {
   }
 }
 
-
 button {
   @include d-flex(center, center);
   cursor: pointer;
@@ -57,7 +53,30 @@ button {
   text-wrap: nowrap;
 }
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #4b47ff #ffffff;
+  }
 
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #4b47ff;
+    border-radius: 10px;
+    border: 0px none #ffffff;
+  }
+
+
+// -------------------- MEDIA -------------------- //
 
 @media (max-width: 1300px) {
   button {

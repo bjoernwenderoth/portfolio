@@ -48,7 +48,7 @@ export class ProjectsComponent {
   }
 
   isWideScreen(): boolean {
-    return this.screenWidth > 770; // Überprüfung der Bildschirmbreite
+    return this.screenWidth > 1100; // Überprüfung der Bildschirmbreite
   }
   
   goToLink(url: string) {

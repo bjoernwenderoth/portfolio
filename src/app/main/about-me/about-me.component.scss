@@ -60,29 +60,16 @@ section {
 
 // -------------------- MEDIA -------------------- //
 
-// DESKTOP
+// Tablet
 
 // @media (max-width: 1100px) {
-//     .container-top {
-//         padding-right: 6vw;
-//     }
-
-//     .profil-picture-container {
-
-//         >img {
-
-//             max-height: 55vh;
-//         }
-//     }
-
-//     .bow-hero {
-//         top: 20%;
+//     section {
+//         padding-left: 50px;
 //     }
 // }
-
 // Mobile
 
-@media (max-width: 769px) {
+@media (max-width: 1100px) {
 
     section {
         padding-left: 25px;
