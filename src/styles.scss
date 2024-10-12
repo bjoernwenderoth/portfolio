@@ -53,27 +53,6 @@ button {
   text-wrap: nowrap;
 }
 
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: #4b47ff #ffffff;
-  }
-
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 16px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: #ffffff;
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: #4b47ff;
-    border-radius: 10px;
-    border: 0px none #ffffff;
-  }
 
 
 // -------------------- MEDIA -------------------- //

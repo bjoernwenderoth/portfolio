@@ -1,6 +1,7 @@
 @import './../../styles.scss';
 
 header {
+
     @include side-space;
     @include d-flex(space-between, center);
     position: fixed;
@@ -35,6 +36,10 @@ a {
 }
 
 .burger-menu {
+    display: none;
+}
+
+.menu {
     display: none;
 }
 
@@ -93,6 +98,6 @@ a {
             overflow: hidden;
 
         }
-    
+
     }
 }

@@ -3,7 +3,6 @@
 
 section {
     @include d-flex(space-between, center);
-
     padding-left: 100px;
     gap: 100px;
     margin-bottom: 200px;
@@ -74,6 +73,7 @@ section {
     section {
         padding-left: 25px;
         padding-right: 25px;
+        margin-bottom: 150px;
     }
 
     .text-container {
