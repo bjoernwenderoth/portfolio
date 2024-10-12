@@ -53,6 +53,24 @@ button {
   text-wrap: nowrap;
 }
 
+::ng-deep .mat-mdc-raised-button.mat-primary {
+  --mdc-protected-button-container-color: #00BEE8;
+}
+
+
+::ng-deep .mat-bottom-sheet-container {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  min-width: 384px;
+  max-width: calc(100vw - 128px);
+  height: 50px;
+  border-top: 2px solid green !important;
+  border-right: 2px solid green;
+  border-left: 2px solid green;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
 
 
 // -------------------- MEDIA -------------------- //
@@ -72,6 +90,6 @@ button {
   }
 }
 
-.d-none{
+.d-none {
   display: none;
 }

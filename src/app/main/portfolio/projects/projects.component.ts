@@ -16,15 +16,15 @@ export class ProjectsComponent {
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       img: 'join_photo',
       liveTestLink: '#', // Link zum Live-Test
-      githubLink: '#',   // Link zum GitHub-Repository
+      githubLink: 'https://github.com/bjoernwenderoth/join',
     },
     {
       title: 'El pollo Loco',
       technologies: 'Javascript | HTML | CSS',
       description: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles to fight against the killer chicken.',
       img: 'elpolloloco_photo',
-      liveTestLink: '#', // Link zum Live-Test
-      githubLink: '#',   // Link zum GitHub-Repository
+      liveTestLink: '#',
+      githubLink: 'https://github.com/bjoernwenderoth/elpollolocogame',
     },
     {
       title: 'Pokédex',
@@ -32,7 +32,7 @@ export class ProjectsComponent {
       description: 'Based on the PokéAPI, a simple library that provides and catalogues Pokémon information.',
       img: 'pokedex_photo',
       liveTestLink: '#', // Link zum Live-Test
-      githubLink: '#',   // Link zum GitHub-Repository
+      githubLink: 'https://github.com/bjoernwenderoth/pokedex',
     }
   ];
 

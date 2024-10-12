@@ -8,6 +8,7 @@ main {
     @include d-flex(center, center);
     flex-direction: column;
     width: 100vw;
+    z-index: 0;
 }
 
 app-hero-section, app-about-me {

@@ -63,6 +63,12 @@ section {
     }
 }
 
+.mat-bottom-sheet-container {
+    z-index: 10000 !important;
+}
+
+
+
 a {
     color: $color-blue;
     font-weight: bold;
@@ -125,12 +131,4 @@ img {
             }
         }
     }
-
-    // img {
-    //     position: absolute;
-    //     left: -30vh;
-    //     bottom: 20vh;
-    //     rotate: -30deg;
-    //     z-index: -3;
-    // }
 }

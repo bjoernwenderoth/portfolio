@@ -47,3 +47,15 @@ section {
         margin-right: 8px;
     }
 }
+
+@media (max-width: 769px) {
+    .imprint {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .link-back {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}

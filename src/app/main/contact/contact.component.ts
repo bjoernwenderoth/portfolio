@@ -8,11 +8,19 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { merge } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import {
+  MatBottomSheet,
+  MatBottomSheetModule,
+  MatBottomSheetRef,
+} from '@angular/material/bottom-sheet';
+import {MatListModule} from '@angular/material/list';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, MatFormFieldModule, MatCheckboxModule, MatIconModule, MatInputModule, FormsModule, ReactiveFormsModule],
+  imports: [MatButtonModule, MatListModule, MatBottomSheetModule, CommonModule, MatFormFieldModule, MatCheckboxModule, MatIconModule, MatInputModule, FormsModule, ReactiveFormsModule,],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -29,7 +37,7 @@ export class ContactComponent {
 
   mailTest = true;
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://bjoern-wenderoth.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -60,7 +68,9 @@ export class ContactComponent {
         .catch(error => {
           console.log(error);
         })
+
       console.log('Form Submitted!', this.contactData);
+      this.openBottomSheet();
       // this.http.post(this.post.endPoint, this.post.body(this.contactData)).subscribe();
       ngForm.resetForm();
     }
@@ -75,7 +85,12 @@ export class ContactComponent {
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => {
+             // Verwende explizit `this`
+            console.info('send post complete');
+          }
+    
+          
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
@@ -102,4 +117,34 @@ export class ContactComponent {
       this.errorMessage.set('');
     }
   }
+
+  private _bottomSheet = inject(MatBottomSheet);
+  openBottomSheet(): void {
+    console.log('openBottomSheet method called');
+    this._bottomSheet.open(BottomSheetOverviewExampleSheet);
+  }
 }
+
+
+@Component({
+  selector: 'bottom-sheet-overview-example-sheet',
+  template: `
+    <div>
+      <p>Deine Anfrage wurde versendet.</p>
+    </div>
+  `,
+})
+
+export class BottomSheetOverviewExampleSheet {
+  
+  constructor(private _bottomSheetRef: MatBottomSheetRef<BottomSheetOverviewExampleSheet>) {
+    setTimeout(() => {
+      this._bottomSheetRef.dismiss();
+    }, 3000);
+  }
+
+  close(): void {
+    this._bottomSheetRef.dismiss();
+  }
+}
+
