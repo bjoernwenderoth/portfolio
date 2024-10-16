@@ -13,11 +13,12 @@ header {
     font-size: 23px;
     z-index: 1000;
 
-    >img {
-        width: 150px;
-        height: auto;
+    >a {
+        >img {
+            width: 150px;
+            height: auto;
+        }
     }
-
 }
 
 
@@ -35,7 +36,7 @@ a {
     }
 }
 
-.burger-menu {
+.hamburger {
     display: none;
 }
 
@@ -100,4 +101,39 @@ a {
         }
 
     }
+
+    :root {
+        font-size: 62.5%;
+    }
+
+
+    .hamburger {
+        width: 4rem;
+        height: 4rem;
+        cursor: pointer;
+        padding: 1rem;
+        @include d-flex(space-around, center);
+        flex-direction: column;
+    }
+
+    .line {
+        width: 100%;
+        height: 0.2rem;
+        background-color: #ffffff;
+        border-radius: 0.2rem;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .clicked .line-1 {
+        transform: rotateZ(-405deg) translate(-0.34rem, 0.6rem);
+    }
+
+    .clicked .line-2 {
+        opacity: 0;
+    }
+
+    .clicked .line-3 {
+        transform: rotateZ(405deg) translate(-0.34rem, -0.6rem);
+    }
+
 }

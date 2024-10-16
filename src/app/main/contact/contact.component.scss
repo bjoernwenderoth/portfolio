@@ -68,6 +68,10 @@ section {
 }
 
 
+  
+.invalid {
+    border-color: green;
+}
 
 a {
     color: $color-blue;
@@ -78,6 +82,15 @@ a {
     }
 }
 
+.privacy-link {
+    color: $color-blue; // Hier kannst du die Farbe anpassen
+    font-weight: bold;
+    z-index: 1000;
+
+    &:hover {
+        text-decoration: underline; // Unterstreichung beim Hover-Effekt
+    }
+}
 button {
     @include button-bg($color-accent, $color-blue);
     margin-top: 30px;
@@ -89,19 +102,43 @@ button {
     }
 }
 
-img {
+// img {
+//     position: absolute;
+//     left: -30vh;
+//     bottom: -300px;
+//     rotate: -30deg;
+//     z-index: -3;
+// }
+
+.btn-up {
     position: absolute;
-    left: -30vh;
-    bottom: -300px;
-    rotate: -30deg;
-    z-index: -3;
+    bottom: 5vh;
+    right: 5vw;
+    transition: transform 0.3s ease;
 }
 
+.btn-up:hover {
+    transform: scale(1.15);
+}
 
 // -------------------- MEDIA -------------------- //
 
 
 // Mobile
+
+@media (max-width: 769px) {
+
+
+
+    .container {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+
+    .text-container {
+        max-width: 100%;
+    }
+}
 
 @media (max-width: 1100px) {
 

@@ -7,19 +7,18 @@ import { Component } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
-  
+export class HeaderComponent {}
 
-}
+// Burgermenu animation and menu toggle logic
 document.addEventListener("DOMContentLoaded", function () {
-  const burgerMenu = document.querySelector(".burger-menu") as HTMLElement | null;
+  const hamburger = document.querySelector('.hamburger') as HTMLElement | null;
   const menu = document.querySelector(".menu") as HTMLElement | null;
   const menuLinks = document.querySelectorAll(".menu a"); // Alle Links im Menü erfassen
   let menuOpen = false;
 
-  if (burgerMenu && menu) {
+  if (hamburger && menu) {
     // Toggle Menu bei Klick auf das Burger-Icon
-    burgerMenu.addEventListener("click", function () {
+    hamburger.addEventListener("click", function () {
       if (menuOpen) {
         closeMenu();
       } else {
@@ -30,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Menü schließen, wenn man außerhalb des Menüs klickt
     document.addEventListener("click", function (event) {
       const target = event.target as Node | null;
-      if (menuOpen && target && !menu.contains(target) && !burgerMenu.contains(target)) {
+      if (menuOpen && target && !menu.contains(target) && !hamburger.contains(target)) {
         closeMenu();
       }
     });
@@ -42,13 +41,14 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   } else {
-    console.error("Burger menu or menu element not found!");
+    console.error("Hamburger or menu element not found!");
   }
 
   // Funktion zum Öffnen des Menüs
   function openMenu() {
-    if (menu) {
+    if (menu && hamburger) {
       menu.style.display = "block";
+      hamburger.classList.add('clicked');  // Icon ändert sich
       document.body.style.overflow = "hidden"; // Scrollen verhindern
       menuOpen = true;
     }
@@ -56,12 +56,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Funktion zum Schließen des Menüs
   function closeMenu() {
-    if (menu) {
+    if (menu && hamburger) {
       menu.style.display = "none";
+      hamburger.classList.remove('clicked');  // Icon zurücksetzen
       document.body.style.overflow = "auto"; // Scrollen wieder erlauben
       menuOpen = false;
     }
   }
 });
-
-

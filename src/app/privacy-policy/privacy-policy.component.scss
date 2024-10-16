@@ -1,0 +1,61 @@
+@import './../../styles.scss';
+
+section {
+    margin-top: 110px;
+    position: relative;
+    max-width: 1920px;
+}
+
+.headline {
+    @include d-flex(flex-start, center);
+
+    >h1 {
+        text-align: end;
+        padding-left: 30px;
+    }
+
+    >div {
+        width: 10vw;
+        height: 4px;
+        background-color: $color-accent;
+    }
+}
+
+.imprint {
+    @include d-flex(center, flex-start);
+    @include side-space;
+    flex-direction: column;
+    max-width: 1600px;
+    margin-bottom: 30px;
+
+    >p {
+        padding-left: 10px;
+    }
+
+    h3 {
+        margin-top: 30px;
+    }
+}
+
+.link-back {
+    @include d-flex(flex-end, center);
+    @include side-space;
+    margin-bottom: 100px;
+
+    .test {
+        rotate: 180deg;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 769px) {
+    .imprint {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .link-back {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}

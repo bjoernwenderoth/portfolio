@@ -98,25 +98,29 @@ export class ContactComponent {
     }
   }
 
-  readonly email = new FormControl('', [Validators.required, Validators.email]);
+// FormControl für Email-Validierung, falls nötig
+readonly email = new FormControl('', [Validators.required, Validators.email]);
 
-  errorMessage = signal('');
+// Signal für die Fehlermeldung
+errorMessage = signal('');
 
-  constructor() {
-    merge(this.email.statusChanges, this.email.valueChanges)
-      .pipe(takeUntilDestroyed())
-      .subscribe(() => this.updateErrorMessage());
+// Methode zur Aktualisierung der Fehlermeldung
+updateErrorMessage() {
+  if (this.email.hasError('required')) {
+    this.errorMessage.set('You must enter a value');
+  } else if (this.email.hasError('email')) {
+    this.errorMessage.set('Not a valid email');
+  } else {
+    this.errorMessage.set('');
   }
+}
 
-  updateErrorMessage() {
-    if (this.email.hasError('required')) {
-      this.errorMessage.set('You must enter a value');
-    } else if (this.email.hasError('email')) {
-      this.errorMessage.set('Not a valid email');
-    } else {
-      this.errorMessage.set('');
-    }
-  }
+// Validierungsüberwachung
+constructor() {
+  merge(this.email.statusChanges, this.email.valueChanges)
+    .pipe(takeUntilDestroyed())
+    .subscribe(() => this.updateErrorMessage());
+}
 
   private _bottomSheet = inject(MatBottomSheet);
   openBottomSheet(): void {
