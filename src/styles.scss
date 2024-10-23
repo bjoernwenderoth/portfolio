@@ -16,6 +16,7 @@ body {
   justify-content: center;
 }
 
+
 body a {
   text-decoration: none;
   cursor: pointer;
@@ -54,7 +55,7 @@ button {
 }
 
 ::ng-deep .mat-mdc-raised-button.mat-primary {
-  --mdc-protected-button-container-color: #00BEE8;
+  --mdc-protected-button-container-color: #0f8dac;
 }
 
 
@@ -71,6 +72,41 @@ button {
   border-top-left-radius: 10px !important;
   border-top-right-radius: 10px !important;
 }
+
+// -------------------- SCROLLBAR -------------------- //
+
+
+/* Grundlegende Scrollbar-Stile für Webkit-Browser (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: $color-dark; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* Für Firefox */
+* {
+  scrollbar-width: thin; 
+  scrollbar-color: #888 #f1f1f1; 
+}
+
+/* Optional: Für Internet Explorer und Edge */
+.scrollable-element {
+  -ms-overflow-style: -ms-autohiding-scrollbar; 
+}
+
 
 
 // -------------------- MEDIA -------------------- //

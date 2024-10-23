@@ -68,7 +68,18 @@ section {
 }
 
 
-  
+::ng-deep .mdc-text-field--focused .mdc-notched-outline>* {
+    border-color: $color-accent !important;
+}
+
+::ng-deep .mdc-text-field--invalid .mdc-notched-outline>* {
+    border-color: red !important;
+}
+
+::ng-deep html {
+--mdc-outlined-text-field-caret-color: auto; 
+}
+
 .invalid {
     border-color: green;
 }
@@ -76,6 +87,7 @@ section {
 a {
     color: $color-blue;
     font-weight: bold;
+    margin: 0px 3px;
 
     &:hover {
         text-decoration: underline;
@@ -91,6 +103,19 @@ a {
         text-decoration: underline; // Unterstreichung beim Hover-Effekt
     }
 }
+
+
+md-checkbox .md-label {
+    pointer-events: auto;
+}
+md-checkbox .md-label span {
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 button {
     @include button-bg($color-accent, $color-blue);
     margin-top: 30px;
@@ -101,14 +126,6 @@ button {
         cursor: not-allowed;
     }
 }
-
-// img {
-//     position: absolute;
-//     left: -30vh;
-//     bottom: -300px;
-//     rotate: -30deg;
-//     z-index: -3;
-// }
 
 .btn-up {
     position: absolute;

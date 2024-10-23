@@ -21,7 +21,7 @@ section {
     }
 }
 
-.imprint {
+.privacy-policy {
     @include d-flex(center, flex-start);
     @include side-space;
     flex-direction: column;
@@ -42,20 +42,36 @@ section {
     @include side-space;
     margin-bottom: 100px;
 
-    .test {
+    .icon-back {
         rotate: 180deg;
         margin-right: 8px;
     }
 }
 
 @media (max-width: 769px) {
-    .imprint {
+    .privacy-policy {
         padding-left: 25px;
         padding-right: 25px;
     }
 
-    .link-back {
-        padding-left: 25px;
-        padding-right: 25px;
+    .headline {
+        >h1 {
+            font-size: 24px;
+        }
+
+        .link-back {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+}
+
+
+@media (max-width: 1100px) {
+
+    .headline {
+        >h1 {
+            font-size: 32px;
+        }
     }
 }

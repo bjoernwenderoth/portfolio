@@ -15,6 +15,7 @@ import {
 } from '@angular/material/bottom-sheet';
 import {MatListModule} from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -26,6 +27,9 @@ import {MatButtonModule} from '@angular/material/button';
 })
 
 export class ContactComponent {
+
+
+
   http = inject(HttpClient)
 
   contactData = {
@@ -116,10 +120,17 @@ updateErrorMessage() {
 }
 
 // Validierungsüberwachung
-constructor() {
+constructor(private router: Router) {
   merge(this.email.statusChanges, this.email.valueChanges)
     .pipe(takeUntilDestroyed())
     .subscribe(() => this.updateErrorMessage());
+}
+
+
+
+navigateToPrivacy(event: Event) {
+  event.stopPropagation(); // Verhindert das Klicken auf die Checkbox
+  this.router.navigate(['/privacy-policy']); // Navigiert zur Datenschutzerklärung
 }
 
   private _bottomSheet = inject(MatBottomSheet);
@@ -150,5 +161,9 @@ export class BottomSheetOverviewExampleSheet {
   close(): void {
     this._bottomSheetRef.dismiss();
   }
+}
+
+function navigateToPrivacy(event: Event | undefined, Event: { new(type: string, eventInitDict?: EventInit): Event; prototype: Event; readonly NONE: 0; readonly CAPTURING_PHASE: 1; readonly AT_TARGET: 2; readonly BUBBLING_PHASE: 3; }) {
+  throw new Error('Function not implemented.');
 }
 

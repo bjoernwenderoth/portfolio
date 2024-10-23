@@ -30,7 +30,7 @@
         <!-- Name Input -->
         <mat-form-field appearance="outline">
           <mat-label>Name</mat-label>
-          <input [(ngModel)]="contactData.name" name="name" matInput placeholder="Placeholder" required>
+          <input [(ngModel)]="contactData.name" name="name" matInput required>
         </mat-form-field>
 
         <!-- E-Mail Input -->
@@ -48,14 +48,14 @@
         <mat-form-field appearance="outline">
           <mat-label>Ihre Nachricht...</mat-label>
           <textarea class="textarea" [(ngModel)]="contactData.message" name="message" minlength="5" matInput
-            placeholder="Your message" required></textarea>
+            required></textarea>
         </mat-form-field>
 
         <!-- Checkbox -->
         <mat-checkbox [(ngModel)]="contactData.privacy" name="privacy" required>
 
-          Ich habe die <a routerLink="/privacy-policy">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner
-          Daten wie beschrieben zu.
+          Ich habe die <a (click)="navigateToPrivacy($event)">Datenschutzerklärung</a> gelesen und stimme der
+          Verarbeitung meiner Daten wie beschrieben zu.
 
           <!-- ENGLISCH
           I've read the <a href="#datenschutz">privacy policy</a> and agree to the processing of my data as outlined. -->

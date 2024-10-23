@@ -28,6 +28,7 @@ section {
         >div {
             min-width: 60px;
             height: 60px;
+
             >img {
                 width: auto;
                 height: 60px;
@@ -62,17 +63,34 @@ section {
     }
 }
 
+// ------------- ANIMATION ------------- //
+
+/* CSS für die Hereinfliegen-Animation */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%); /* Start außerhalb des Bildschirms auf der linken Seite */
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0); /* Endposition */
+      opacity: 1;
+    }
+  }
+  
+  .text-container > div {
+    opacity: 0; /* Initial unsichtbar */
+    transform: translateX(-100%); /* Initial außerhalb des Bildschirms */
+    transition: transform 1.5s ease-out, opacity 0.5s ease-out;
+  }
+  
+  /* Klasse, die die Animation startet */
+  .animate-slide-in {
+    animation: slideInFromLeft 1.5s forwards; /* Die Animation läuft 0.5 Sekunden */
+  }
+
 
 // -------------------- MEDIA -------------------- //
 
-// Tablet
-
-// @media (max-width: 1100px) {
-//     section {
-//         padding-left: 50px;
-//     }
-// }
-// Mobile
 
 @media (max-width: 1100px) {
 
@@ -85,12 +103,19 @@ section {
     .text-container {
         max-width: 100%;
 
-        >div {
-            padding: 60px 0px 0px 30px;
 
-            >img {
-                width: 50px;
-                height: auto;
+        >div {
+            flex-direction: column;
+            text-align: center;
+            padding: 80px 0px 0px 0px;
+            gap: 25px;
+
+            >div {
+
+                >img {
+                    width: auto;
+                    height: 60px;
+                }
             }
         }
     }
