@@ -1,13 +1,31 @@
 import { Component } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  currentLanguage: string;
+
+  constructor(private translate: TranslateService){
+    this.currentLanguage = this.translate.defaultLang || 'de';
+    this.translate.onLangChange.subscribe(lang => {
+      this.currentLanguage = lang.lang; 
+    });
+  }
+
+  switchLanguage() {
+    if (this.translate.currentLang == 'de') {
+      this.translate.use('en')
+    } else {
+      this.translate.use('de')
+    }
+  }
+}
 
 // Burgermenu animation and menu toggle logic
 document.addEventListener("DOMContentLoaded", function () {

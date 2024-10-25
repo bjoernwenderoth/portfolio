@@ -13,7 +13,7 @@ export class ProjectsComponent {
   projects = [
     {
       title: 'Join',
-      technologies: 'Javacript | HTML | CSS | Firebase',
+      technologies: 'JavaScript | HTML | CSS | Firebase',
       description: 'Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
       // description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       img: 'join_photo',
@@ -22,7 +22,7 @@ export class ProjectsComponent {
     },
     {
       title: 'El pollo Loco',
-      technologies: 'Javascript | HTML | CSS',
+      technologies: 'JavaScript | HTML | CSS',
       description: 'Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Giftflaschen zu finden, um gegen das Killerhuhn zu kämpfen.',
       // description: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles to fight against the killer chicken.',
       img: 'elpolloloco_photo',
@@ -31,7 +31,7 @@ export class ProjectsComponent {
     },
     {
       title: 'Pokédex',
-      technologies: 'Javascript | HTML | CSS | API',
+      technologies: 'JavaScript | HTML | CSS | API',
       description: 'Basiert auf der PokéAPI, einer einfachen Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.',
       // description: 'Based on the PokéAPI, a simple library that provides and catalogues Pokémon information.',
       img: 'pokedex_photo',

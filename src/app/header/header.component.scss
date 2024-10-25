@@ -26,6 +26,20 @@ header {
     @include d-flex(center, center);
     gap: 30px;
 
+    >img {
+        width: 40px;
+        height: 40px;
+        border: 2px solid #ffffff55;
+        border-radius: 90%;
+        transition: transform 0.2s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.12);
+        }
+    }
+
+
 }
 
 a {
@@ -42,6 +56,18 @@ a {
 
 .menu {
     display: none;
+
+    >div {
+        >img {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 30px;
+            top: 130px;
+            border: 2px solid #ffffff55;
+            border-radius: 90%;
+        }
+    }
 }
 
 // -------------------- MEDIA -------------------- //

@@ -5,7 +5,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { ImprintComponent } from './imprint/imprint.component';
-import { routes } from './app.routes';
+import { TranslateModule } from '@ngx-translate/core';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @Component({
@@ -19,7 +20,10 @@ import { routes } from './app.routes';
     FooterComponent,
     ImprintComponent,
     RouterModule,
-  ImprintComponent,],
+    ImprintComponent,
+    HttpClientModule,
+    TranslateModule
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
