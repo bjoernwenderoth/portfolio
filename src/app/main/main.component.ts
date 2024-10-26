@@ -23,7 +23,5 @@ import { ImprintComponent } from '../imprint/imprint.component';
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })
-export class MainComponent {
-
-}
+export class MainComponent {}
 

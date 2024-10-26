@@ -40,6 +40,5 @@ export class SkillsComponent {
       if (lowerButton) lowerButton.classList.remove('d-none');
     }
   }
-  
 }
 

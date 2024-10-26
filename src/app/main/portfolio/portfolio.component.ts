@@ -9,6 +9,4 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
-export class PortfolioComponent {
-
-}
+export class PortfolioComponent {}

@@ -11,80 +11,79 @@ main {
     z-index: 0;
 }
 
-app-hero-section, app-about-me {
+app-hero-section,
+app-about-me {
     position: relative;
-    z-index: auto // Die Child-Komponenten müssen über dem Hintergrundbild liegen
+    z-index: auto
 }
 
 .background-container-aboutme {
     position: relative;
     width: 100%;
     height: auto;
-    min-height: 10vh; // oder entsprechend der gewünschten Höhe
+    min-height: 10vh;
     background-image: url('./../../assets/img/background-images/purple_blur_aboutme.png');
     background-repeat: no-repeat;
     background-position: 80vw calc(105vh - 31vw);
-    background-size: 70vh; // oder contain, je nach gewünschtem Effekt
-    z-index: auto;  //sorgt dafür, dass es hinter den anderen Elementen bleibt
+    background-size: 70vh;
+    z-index: auto;
 }
 
-app-skills, app-portfolio {
+app-skills,
+app-portfolio {
     position: relative;
-    z-index: auto // Die Child-Komponenten müssen über dem Hintergrundbild liegen
+    z-index: auto
 }
 
 .background-container-skills {
     position: relative;
     width: 100%;
     height: auto;
-    min-height: 10vh; // oder entsprechend der gewünschten Höhe
+    min-height: 10vh; 
     background-image: url('./../../assets/img/background-images/blue_blur_skills.png');
     background-repeat: no-repeat;
     background-position: -40vw 5%;
-    background-size: 60vw auto; // oder contain, je nach gewünschtem Effekt
-    z-index: -5; // sorgt dafür, dass es hinter den anderen Elementen bleibt
+    background-size: 60vw auto; 
+    z-index: -5;
 }
 
 app-portfolio {
     position: relative;
-    z-index: auto // Die Child-Komponenten müssen über dem Hintergrundbild liegen
+    z-index: auto
 }
 
 .background-container-portfolio {
     position: relative;
     width: 100%;
     height: auto;
-    min-height: 10vh; // oder entsprechend der gewünschten Höhe
+    min-height: 10vh; 
     background-image: url('./../../assets/img/background-images/purple_blur_portfolio.png');
     background-repeat: no-repeat;
     background-position: 39vw 36%;
-    background-size: 42vw auto; // oder contain, je nach gewünschtem Effekt
-    z-index: -5; // sorgt dafür, dass es hinter den anderen Elementen bleibt
+    background-size: 42vw auto;
+    z-index: -5;
 }
-
 
 .background-container-portfolio-bottom {
     position: relative;
     width: 100%;
     height: auto;
-    min-height: 10vh; // oder entsprechend der gewünschten Höhe
+    min-height: 10vh;
     background-image: url('./../../assets/img/background-images/blue_blur_portfolio_bottom.png');
     background-repeat: no-repeat;
     background-position: 75vw 100%;
-    background-size: 65vw auto; // oder contain, je nach gewünschtem Effekt
-    z-index: -5; // sorgt dafür, dass es hinter den anderen Elementen bleibt
+    background-size: 65vw auto;
+    z-index: -5;
 }
 
 .background-container-contact {
     position: relative;
     width: 100%;
     height: auto;
-    min-height: 10vh; // oder entsprechend der gewünschten Höhe
+    min-height: 10vh;
     background-image: url('./../../assets/img/background-images/contact_blur.png');
     background-repeat: no-repeat;
     background-position: -12vw calc(100% + 23vw);
-    background-size: 60vw auto; // oder contain, je nach gewünschtem Effekt
-    z-index: -5; // sorgt dafür, dass es hinter den anderen Elementen bleibt
+    background-size: 60vw auto;
+    z-index: -5;
 }
-
-

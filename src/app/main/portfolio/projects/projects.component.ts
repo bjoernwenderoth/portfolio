@@ -39,7 +39,6 @@ export class ProjectsComponent {
   ];
 
   screenWidth: number;
-
   constructor() {
     this.screenWidth = window.innerWidth;
   }

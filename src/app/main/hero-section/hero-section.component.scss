@@ -30,9 +30,9 @@ section {
 
     >img {
 
-        max-height: 80vh; // Begrenzt die Höhe auf 85% der Viewport-Höhe
-        width: auto; // Stellt sicher, dass die Breite automatisch angepasst wird, wenn die Höhe priorisiert wird
-        height: auto; // Stellt sicher, dass die Höhe automatisch angepasst wird, wenn die Breite priorisiert wird
+        max-height: 80vh;
+        width: auto;
+        height: auto;
     }
 }
 
@@ -56,7 +56,6 @@ section {
         }
     }
 }
-
 
 .name-title {
     @include d-flex(center, center);
@@ -124,7 +123,7 @@ button {
     }
 
     a:hover img {
-        transform: scale(1.33); // Increases the size by 33% (30px * 1.33 = 40px)
+        transform: scale(1.33);
     }
 }
 
@@ -153,8 +152,6 @@ button {
 
 // -------------------- MEDIA -------------------- //
 
-// Tablet
-
 @media (max-width: 1650px) and (max-height: 1000px) {
 
     .container-top {
@@ -173,8 +170,7 @@ button {
     }
 }
 
-@media (max-width: 1350px)  and (max-height: 1000px){
-
+@media (max-width: 1350px) and (max-height: 1000px) {
 
     .profil-picture-container {
 
@@ -188,8 +184,7 @@ button {
     }
 }
 
-@media (max-width: 1250px)  and (max-height: 1000px){
-
+@media (max-width: 1250px) and (max-height: 1000px) {
 
     .profil-picture-container {
 
@@ -220,8 +215,6 @@ button {
         top: 14%;
     }
 }
-
-// Mobile
 
 @media (max-width: 769px) {
 
@@ -275,7 +268,6 @@ button {
         }
     }
 
-
     .social-links {
         @include d-flex(flex-start, center);
         justify-content: center;
@@ -294,11 +286,7 @@ button {
     .scroll-down {
         display: none;
     }
-
-
 }
-
-
 
 @media (max-width: 600px) {
     .bow-hero {

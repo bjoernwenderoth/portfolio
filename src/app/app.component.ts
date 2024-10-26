@@ -8,7 +8,6 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { HttpClientModule } from '@angular/common/http';
 
-
 @Component({
   selector: 'app-root',
   standalone: true,
