@@ -1,4 +1,48 @@
 {
-    "INTRODUCTION": "About Me",
-    "DESCRIPTION": "I am a frontend developer..."
+    "HEADER": {
+        "ABOUT_ME": "About me",
+        "CONTACT": "Contact"
+    },
+    "HERO_COMPONENT": {
+        "BTN": "Let's talk!",
+        "SCROLL": "Scroll down"
+    },
+    "ABOUT_ME_COMPONENT": {
+        "HEADLINE": "About me",
+        "DESCRIPTION": "I am a frontend developer from Kassel, Germany, with expertise in modern web technologies such as HTML, CSS and JavaScript. My focus is on the development of user-friendly and high-performance websites and web applications.",
+        "REMOTE_WORK": "Although I am based in the heart of northern Hesse, I am not tied to a fixed location. I work remotely and offer my expertise to companies throughout Germany to implement digital projects flexibly and efficiently.",
+        "PROJECT_APPROACH": "From the initial idea to the completion of your project, I will guide you through all stages of development. From the first sketch to the finishing touches, we will work together to create a solution that is tailored to your needs and the needs of your users.",
+        "UX_UI": "With my background in UX/UI design, I offer the complete package for successful web projects. I understand both technical development and the importance of user-centred design for engaging, intuitive experiences."
+    },
+    "SKILLS_COMPONENT": {
+        "LEARNING": "Continually learning",
+        "EXPERIENCE_TECH": "I have worked on various projects using different front-end technologies. I enjoy trying out new tools and techniques to learn and keep up with the latest in web development.",
+        "SKILLS_OFFER": "Looking for other skills?",
+        "CONTACT_INVITE": "Write to me, I look forward to expanding my knowledge!",
+        "BTN_CONTACT": "Contact"
+    },
+    "PORTFOLIO_COMPONENT": {
+        "DESCRIPTION": "Here is a selection of my projects - interact with the projects to see my skills in action."
+    },
+    "PROJECT_COMPONENT": {
+        "DESCRIPTION_JOIN": "Kanban-style task manager. Create and organise tasks using drag and drop, assign users and categories.",
+        "DESCRIPTION_ELPOLLOLOCO": "A simple jump and run game based on an object oriented approach. Help Pepe find coins and poison bottles to fight the killer chicken.",
+        "DESCRIPTION_POKEDEX": "Based on the PokéAPI, a simple library that provides and catalogues Pokémon information."
+    },
+    "CONTACT_COMPONENT": {
+        "HEADLINE": "Contact",
+        "CHALLENGE_PROMPT": "You have a challenge? You need a solution?",
+        "CONTACT_FORM_INVITE": "Feel free to contact me using this form - I'm looking forward to hearing your ideas and contributing to your projects with my work.",
+        "FRONTEND_DEVELOPER_OFFER": "Are you looking for a frontend developer?",
+        "CONTACT_ME": "Get in touch with me!",
+        "FORM_TEXTBOX": "Your message...",
+        "FORM_CHECKBOX_TEXT": "I have read the ",
+        "FORM_CHECKBOX_LINK": "privacy policy",
+        "FORM_CHECKBOX_SUFFIX": "and agree to the processing of my data as described.",
+        "FORM_BTN": "Send message",
+        "FORM_FEEDBACK": "Your request has been sent."
+    },
+    "FOOTER": {
+        "IMPRINT": "Imprint"
+    }
 }

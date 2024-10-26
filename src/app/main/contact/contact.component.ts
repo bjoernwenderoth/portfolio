@@ -16,29 +16,25 @@ import {
 import {MatListModule} from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button';
 import { Router } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [MatButtonModule, MatListModule, MatBottomSheetModule, CommonModule, MatFormFieldModule, MatCheckboxModule, MatIconModule, MatInputModule, FormsModule, ReactiveFormsModule,],
+  imports: [TranslateModule, MatButtonModule, MatListModule, MatBottomSheetModule, CommonModule, MatFormFieldModule, MatCheckboxModule, MatIconModule, MatInputModule, FormsModule, ReactiveFormsModule,],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 
 export class ContactComponent {
-
-
-
   http = inject(HttpClient)
-
   contactData = {
     name: "",
     email: "",
     message: "",
     privacy: false
   }
-
   mailTest = true;
   post = {
     endPoint: 'https://bjoern-wenderoth.de/sendMail.php',
@@ -75,7 +71,6 @@ export class ContactComponent {
 
       console.log('Form Submitted!', this.contactData);
       this.openBottomSheet();
-      // this.http.post(this.post.endPoint, this.post.body(this.contactData)).subscribe();
       ngForm.resetForm();
     }
 
@@ -83,26 +78,20 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
           },
           error: (error) => {
             console.error(error);
           },
           complete: () => {
-             // Verwende explizit `this`
             console.info('send post complete');
           }
-    
-          
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
       ngForm.resetForm();
     }
   }
 
-// FormControl für Email-Validierung, falls nötig
 readonly email = new FormControl('', [Validators.required, Validators.email]);
 
 // Signal für die Fehlermeldung
@@ -126,13 +115,10 @@ constructor(private router: Router) {
     .subscribe(() => this.updateErrorMessage());
 }
 
-
-
 navigateToPrivacy(event: Event) {
-  event.stopPropagation(); // Verhindert das Klicken auf die Checkbox
-  this.router.navigate(['/privacy-policy']); // Navigiert zur Datenschutzerklärung
+  event.stopPropagation(); 
+  this.router.navigate(['/privacy-policy']);
 }
-
   private _bottomSheet = inject(MatBottomSheet);
   openBottomSheet(): void {
     console.log('openBottomSheet method called');
@@ -140,24 +126,24 @@ navigateToPrivacy(event: Event) {
   }
 }
 
-
 @Component({
   selector: 'bottom-sheet-overview-example-sheet',
+  standalone: true,
+  imports: [TranslateModule],
   template: `
     <div>
-      <p>Deine Anfrage wurde versendet.</p>
+      <p>{{ 'CONTACT_COMPONENT.FORM_FEEDBACK' | translate }}</p>
     </div>
   `,
-})
+})  
 
 export class BottomSheetOverviewExampleSheet {
-  
+
   constructor(private _bottomSheetRef: MatBottomSheetRef<BottomSheetOverviewExampleSheet>) {
     setTimeout(() => {
       this._bottomSheetRef.dismiss();
     }, 3000);
   }
-
   close(): void {
     this._bottomSheetRef.dismiss();
   }

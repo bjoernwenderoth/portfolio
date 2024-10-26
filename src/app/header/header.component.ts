@@ -27,15 +27,15 @@ export class HeaderComponent {
   }
 }
 
-// Burgermenu animation and menu toggle logic
+// -------------------- ANIMATION BURGER MENU -------------------- //
+
 document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.querySelector('.hamburger') as HTMLElement | null;
   const menu = document.querySelector(".menu") as HTMLElement | null;
-  const menuLinks = document.querySelectorAll(".menu a"); // Alle Links im Menü erfassen
+  const menuLinks = document.querySelectorAll(".menu a");
   let menuOpen = false;
 
   if (hamburger && menu) {
-    // Toggle Menu bei Klick auf das Burger-Icon
     hamburger.addEventListener("click", function () {
       if (menuOpen) {
         closeMenu();
@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // Menü schließen, wenn man außerhalb des Menüs klickt
     document.addEventListener("click", function (event) {
       const target = event.target as Node | null;
       if (menuOpen && target && !menu.contains(target) && !hamburger.contains(target)) {
@@ -52,32 +51,29 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // Event-Listener für alle Links im Menü
     menuLinks.forEach(link => {
       link.addEventListener("click", function () {
-        closeMenu(); // Menü schließen, wenn ein Link angeklickt wird
+        closeMenu();
       });
     });
   } else {
     console.error("Hamburger or menu element not found!");
   }
 
-  // Funktion zum Öffnen des Menüs
   function openMenu() {
     if (menu && hamburger) {
       menu.style.display = "block";
-      hamburger.classList.add('clicked');  // Icon ändert sich
-      document.body.style.overflow = "hidden"; // Scrollen verhindern
+      hamburger.classList.add('clicked');  
+      document.body.style.overflow = "hidden"; 
       menuOpen = true;
     }
   }
 
-  // Funktion zum Schließen des Menüs
   function closeMenu() {
     if (menu && hamburger) {
       menu.style.display = "none";
-      hamburger.classList.remove('clicked');  // Icon zurücksetzen
-      document.body.style.overflow = "auto"; // Scrollen wieder erlauben
+      hamburger.classList.remove('clicked');
+      document.body.style.overflow = "auto";
       menuOpen = false;
     }
   }

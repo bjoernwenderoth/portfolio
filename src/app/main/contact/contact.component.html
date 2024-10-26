@@ -1,38 +1,22 @@
 <section id="contact">
   <div>
     <div class="line"></div>
-    <h1>Kontakt</h1>
+    <h1>{{ 'CONTACT_COMPONENT.HEADLINE' | translate }}</h1>
   </div>
-
   <div class="container">
     <div class="text-container">
-
-      <h2>Hast du eine Herausforderung, die gelöst werden muss?</h2>
-      <span>Schreib mir einfach über dieses Formular – ich bin gespannt auf deine Ideen und freue mich darauf, mit
-        meiner Arbeit zu deinen Projekten beizutragen.</span>
-      <span>Auf der Suche nach einem Frontend-Entwickler?
-        <b>Kontaktiere mich gerne!</b></span>
-
-      <!--ENGLISCH
-          
-            <h2>Got a problem to solve?</h2>
-            <span>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing
-                to
-                your projects with my work.</span>
-            <span>Need a Frontend developer? <b>Contact me!</b></span> -->
-
+      <h2>{{ 'CONTACT_COMPONENT.CHALLENGE_PROMPT' | translate }}</h2>
+      <span>{{ 'CONTACT_COMPONENT.CONTACT_FORM_INVITE' | translate }}</span>
+      <span>{{ 'CONTACT_COMPONENT.FRONTEND_DEVELOPER_OFFER' | translate }}
+        <b>{{ 'CONTACT_COMPONENT.CONTACT_ME' | translate }}</b></span>
     </div>
-
-
     <div class="form-container">
       <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-
         <!-- Name Input -->
         <mat-form-field appearance="outline">
           <mat-label>Name</mat-label>
           <input [(ngModel)]="contactData.name" name="name" matInput required>
         </mat-form-field>
-
         <!-- E-Mail Input -->
         <mat-form-field appearance="outline">
           <mat-label>E-Mail</mat-label>
@@ -42,37 +26,26 @@
           <!-- Fehler anzeigen, wenn ungültig und das Feld wurde bereits berührt -->
           <mat-error *ngIf="email.invalid && email.touched">{{ errorMessage() }}</mat-error>
         </mat-form-field>
-
-
         <!-- Textarea Input -->
         <mat-form-field appearance="outline">
-          <mat-label>Ihre Nachricht...</mat-label>
+          <mat-label>{{ 'CONTACT_COMPONENT.FORM_TEXTBOX' | translate }}</mat-label>
           <textarea class="textarea" [(ngModel)]="contactData.message" name="message" minlength="5" matInput
             required></textarea>
         </mat-form-field>
-
         <!-- Checkbox -->
         <mat-checkbox [(ngModel)]="contactData.privacy" name="privacy" required>
-
-          Ich habe die <a (click)="navigateToPrivacy($event)">Datenschutzerklärung</a> gelesen und stimme der
-          Verarbeitung meiner Daten wie beschrieben zu.
-
-          <!-- ENGLISCH
-          I've read the <a href="#datenschutz">privacy policy</a> and agree to the processing of my data as outlined. -->
+          {{ 'CONTACT_COMPONENT.FORM_CHECKBOX_TEXT' | translate }}
+          <a (click)="navigateToPrivacy($event)">{{ 'CONTACT_COMPONENT.FORM_CHECKBOX_LINK' | translate }}</a>
+          {{ 'CONTACT_COMPONENT.FORM_CHECKBOX_SUFFIX' | translate }}
         </mat-checkbox>
-
         <!-- Submit Button -->
         <button mat-raised-button color="primary" [disabled]="!contactForm.form.valid || !contactData.privacy">
-          Nachricht absenden
+          {{ 'CONTACT_COMPONENT.FORM_BTN' | translate }}
         </button>
-
       </form>
     </div>
-
     <a class="btn-up" href="#heroSection">
       <img src="./../../../assets/img/icons/go_up_button.png" alt="go_up_button">
     </a>
   </div>
-
-
 </section>

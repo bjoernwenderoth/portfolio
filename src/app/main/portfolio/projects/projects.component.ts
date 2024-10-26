@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
@@ -14,8 +15,7 @@ export class ProjectsComponent {
     {
       title: 'Join',
       technologies: 'JavaScript | HTML | CSS | Firebase',
-      description: 'Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
-      // description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      descriptionKey: 'PROJECT_COMPONENT.DESCRIPTION_JOIN',
       img: 'join_photo',
       liveTestLink: 'https://join.bjoern-wenderoth.de/',
       githubLink: 'https://github.com/bjoernwenderoth/join',
@@ -23,8 +23,7 @@ export class ProjectsComponent {
     {
       title: 'El pollo Loco',
       technologies: 'JavaScript | HTML | CSS',
-      description: 'Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Giftflaschen zu finden, um gegen das Killerhuhn zu kämpfen.',
-      // description: 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe to find coins and poison bottles to fight against the killer chicken.',
+      descriptionKey: 'PROJECT_COMPONENT.DESCRIPTION_ELPOLLOLOCO',
       img: 'elpolloloco_photo',
       liveTestLink: 'https://elpolloloco.bjoern-wenderoth.de/',
       githubLink: 'https://github.com/bjoernwenderoth/elpolloloco-game',
@@ -32,8 +31,7 @@ export class ProjectsComponent {
     {
       title: 'Pokédex',
       technologies: 'JavaScript | HTML | CSS | API',
-      description: 'Basiert auf der PokéAPI, einer einfachen Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert.',
-      // description: 'Based on the PokéAPI, a simple library that provides and catalogues Pokémon information.',
+      descriptionKey: 'PROJECT_COMPONENT.DESCRIPTION_POKEDEX',
       img: 'pokedex_photo',
       liveTestLink: 'https://pokedex.bjoern-wenderoth.de/',
       githubLink: 'https://github.com/bjoernwenderoth/pokedex',
@@ -45,7 +43,7 @@ export class ProjectsComponent {
   constructor() {
     this.screenWidth = window.innerWidth;
   }
-
+  
   @HostListener('window:resize', ['$event'])
   onResize(event: Event) {
     this.screenWidth = (event.target as Window).innerWidth;

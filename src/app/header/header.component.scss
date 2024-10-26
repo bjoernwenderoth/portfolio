@@ -1,7 +1,6 @@
 @import './../../styles.scss';
 
 header {
-
     @include side-space;
     @include d-flex(space-between, center);
     position: fixed;
@@ -21,7 +20,6 @@ header {
     }
 }
 
-
 .links {
     @include d-flex(center, center);
     gap: 30px;
@@ -38,8 +36,6 @@ header {
             transform: scale(1.12);
         }
     }
-
-
 }
 
 a {
@@ -71,13 +67,6 @@ a {
 }
 
 // -------------------- MEDIA -------------------- //
-
-// Tablet 
-
-
-
-
-// Mobile
 
 @media (max-width: 769px) {
     header {

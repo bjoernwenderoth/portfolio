@@ -19,7 +19,6 @@ section {
             height: 4px;
             background-color: $color-blue;
         }
-
     }
 
     .text-container {
@@ -32,7 +31,6 @@ section {
         >h2 {
             font-size: 32px;
             font-weight: 700;
-
         }
     }
 
@@ -66,7 +64,6 @@ section {
 .mat-bottom-sheet-container {
     z-index: 10000 !important;
 }
-
 
 ::ng-deep .mdc-text-field--focused .mdc-notched-outline>* {
     border-color: $color-accent !important;
@@ -104,7 +101,6 @@ a {
     }
 }
 
-
 md-checkbox .md-label {
     pointer-events: auto;
 }
@@ -140,13 +136,8 @@ button {
 
 // -------------------- MEDIA -------------------- //
 
-
-// Mobile
-
 @media (max-width: 769px) {
-
-
-
+    
     .container {
         padding-left: 25px !important;
         padding-right: 25px !important;

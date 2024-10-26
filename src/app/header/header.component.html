@@ -1,26 +1,23 @@
 <header id="header">
     <a href="#heroSection"> <img src="../../assets/img/logo.png" alt="logo_head"></a>
     <div class="links">
-        <a href="#aboutMeSection">Über mich</a>
+        <a href="#aboutMeSection">{{ 'HEADER.ABOUT_ME' | translate }}</a>
         <a href="#skillSection">Skills</a>
         <a href="#portfolioSection">Portfolio</a>
         <img (click)="switchLanguage()" src="./../../assets/img/icons/{{currentLanguage}}.png" alt="">
     </div>
-
     <div class="hamburger">
         <div class="line line-1"></div>
         <div class="line line-2"></div>
         <div class="line line-3"></div>
     </div>
 </header>
-
 <div class="menu">
-
     <div>
         <img (click)="switchLanguage()" src="./../../assets/img/icons/{{currentLanguage}}.png" alt="">
-        <a href="#aboutMeSection">Über mich</a>
+        <a href="#aboutMeSection">{{ 'HEADER.ABOUT_ME' | translate }}</a>
         <a href="#skillSection">Skills</a>
         <a href="#portfolioSection">Portfolio</a>
-        <a href="#contactSection">Kontakt</a>
+        <a href="#contactSection">{{ 'HEADER.CONTACT' | translate }}</a>
     </div>
 </div>
