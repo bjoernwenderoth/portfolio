@@ -19,11 +19,8 @@ export class HeaderComponent {
   }
 
   switchLanguage() {
-    if (this.translate.currentLang == 'de') {
-      this.translate.use('en')
-    } else {
-      this.translate.use('de')
-    }
+    let newLanguage = this.currentLanguage === 'de' ? 'en' : 'de';
+    this.translate.use(newLanguage);
   }
 }
 

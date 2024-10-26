@@ -9,8 +9,8 @@
     },
     "ABOUT_ME_COMPONENT": {
         "HEADLINE": "About me",
-        "DESCRIPTION": "I am a frontend developer from Kassel, Germany, with expertise in modern web technologies such as HTML, CSS and JavaScript. My focus is on the development of user-friendly and high-performance websites and web applications.",
-        "REMOTE_WORK": "Although I am based in the heart of northern Hesse, I am not tied to a fixed location. I work remotely and offer my expertise to companies throughout Germany to implement digital projects flexibly and efficiently.",
+        "DESCRIPTION": "I am a frontend developer from Kassel, Germany, with expertise in modern web technologies such as Angular, React, JavaScript and TypeScript. My focus is on the development of user-friendly and high-performance websites and web applications.",
+        "REMOTE_WORK": "Although I am based in the heart of northern Hessen, I am not tied to a fixed location. I work remotely and offer my expertise to companies throughout Germany to implement digital projects flexibly and efficiently.",
         "PROJECT_APPROACH": "From the initial idea to the completion of your project, I will guide you through all stages of development. From the first sketch to the finishing touches, we will work together to create a solution that is tailored to your needs and the needs of your users.",
         "UX_UI": "With my background in UX/UI design, I offer the complete package for successful web projects. I understand both technical development and the importance of user-centred design for engaging, intuitive experiences."
     },
