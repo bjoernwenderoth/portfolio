@@ -2,20 +2,25 @@
 
 header {
     @include side-space;
-    @include d-flex(space-between, center);
+    @include d-flex(center, center);
     position: fixed;
     top: 0;
-    height: 110px;
     background-color: $color-dark;
-    width: 100%;
-    max-width: 1920px;
+    width: 100vw;
     font-size: 23px;
     z-index: 1000;
 
-    >a {
-        >img {
-            width: 150px;
-            height: auto;
+    >div {
+        @include d-flex(space-between, center);
+        width: 100%;
+        max-width: 1920px;
+        height: 110px;
+        >a {
+            @include d-flex(center, center);
+            >img {
+                width: 150px;
+                height: auto;
+            }
         }
     }
 }

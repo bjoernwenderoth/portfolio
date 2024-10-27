@@ -1,39 +1,48 @@
 <section>
-    <img id="dynamicImage" class="bow-hero">
+    <!-- <img id="dynamicImage" src="{{ this.src }}" class="bow-hero" /> -->
     <div class="container-top">
-        <div class="profil-picture-container">
-            <img src="./../../../assets/img/picture-hero-section.png" alt="picture-hero-section">
+      <div class="profil-picture-container">
+        <img
+          src="./../../../assets/img/picture-hero-section.png"
+          alt="picture-hero-section"
+        />
+      </div>
+      <div class="profil-text-container">
+        <div>
+          <h2>I am</h2>
+          <div class="name-title">
+            <h1>BJÖRN WENDEROTH</h1>
+            <h2 class="purple fade-in-effect">FRONTEND DEVELOPER</h2>
+          </div>
         </div>
-        <div class="profil-text-container">
-            <div>
-                <h2>I am</h2>
-                <div class="name-title">
-                    <h1>BJÖRN WENDEROTH</h1>
-                    <h2 class="purple fade-in-effect">FRONTEND DEVELOPER</h2>
-                </div>
-            </div>
-            <a href="#contact">
-                <button>{{ 'HERO_COMPONENT.BTN' | translate }}</button>
-            </a>
-        </div>
+        <a href="#contact">
+          <button>{{ "HERO_COMPONENT.BTN" | translate }}</button>
+        </a>
+      </div>
     </div>
     <div class="social-scroll-container">
-        <div class="social-links">
-            <div></div>
-            <a href="https://github.com/bjoernwenderoth/" target="_blank">
-                <img src="./../../assets/img/icons/github_icon.png" alt="GitHub">
-            </a>
-            <a href="mailto:bjoernwe1989@googlemail.com">
-                <img src="./../../assets/img/icons/mail_icon.png" alt="Mail">
-            </a>
-            <a href="https://www.linkedin.com/in/bj%C3%B6rn-wenderoth-3b4717260/" target="_blank">
-                <img src="./../../assets/img/icons/linkedin_icon.png" alt="LinkedIn">
-            </a>
-            <a href="mailto:bjoernwe1989&#64;gmail.com">bjoernwe1989&#64;gmail.com</a>
-        </div>
-        <div class="scroll-down">
-            <span>{{ 'HERO_COMPONENT.SCROLL' | translate }}</span>
-            <img src="./../../../assets/img/icons/arrow-right.png" alt="arrow-right">
-        </div>
+      <div class="social-links">
+        <div></div>
+        <a href="https://github.com/bjoernwenderoth/" target="_blank">
+          <img src="./../../assets/img/icons/github_icon.png" alt="GitHub" />
+        </a>
+        <a href="mailto:bjoernwe1989@googlemail.com">
+          <img src="./../../assets/img/icons/mail_icon.png" alt="Mail" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/bj%C3%B6rn-wenderoth-3b4717260/"
+          target="_blank"
+        >
+          <img src="./../../assets/img/icons/linkedin_icon.png" alt="LinkedIn" />
+        </a>
+        <a href="mailto:bjoernwe1989&#64;gmail.com">bjoernwe1989&#64;gmail.com</a>
+      </div>
+      <div class="scroll-down">
+        <span>{{ "HERO_COMPONENT.SCROLL" | translate }}</span>
+        <img
+          src="./../../../assets/img/icons/arrow-right.png"
+          alt="arrow-right"
+        />
+      </div>
     </div>
-</section>
+  </section>

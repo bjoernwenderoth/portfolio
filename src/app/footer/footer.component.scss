@@ -3,16 +3,17 @@
 footer {
     overflow: hidden;
     @include side-space;
-    @include d-flex(center, space-between);
+    @include d-flex(center, center);
     width: 100vw;
     height: 290px;
     border-top: 4px solid $color-accent;
     flex-direction: column;
-    max-width: 1920px;
 
     >div {
         @include d-flex(space-between, center);
         flex-wrap: wrap-reverse;
+        max-width: 1920px;
+        width: 100%;
 
         >img {
             width: 214px;
@@ -21,7 +22,6 @@ footer {
         >span {
             font-size: 23px;
             text-wrap: nowrap;
-
         }
     }
 }
@@ -89,6 +89,7 @@ footer {
         >div {
             justify-content: center;
             flex-wrap: wrap;
+
             >span {
                 font-size: 20px;
             }

@@ -40,7 +40,13 @@
         "FORM_CHECKBOX_LINK": "privacy policy",
         "FORM_CHECKBOX_SUFFIX": "and agree to the processing of my data as described.",
         "FORM_BTN": "Send message",
-        "FORM_FEEDBACK": "Your request has been sent."
+        "FORM_FEEDBACK": "Your request has been sent.",
+        "NAME_REQUIRED": "Name is required",
+        "MAIL_REQUIRED": "Email is required",
+        "MAIL_FALSE": "Please enter a valid email address",
+        "MESSAGE_REQUIRED": "Please enter a message",
+        "MESSAGE_MIN_LENGTH": "The message must be at least 5 characters long",
+        "PRIVACY_REQUIRED": "Please accept the privacy policy"
     },
     "FOOTER": {
         "IMPRINT": "Imprint"

@@ -40,9 +40,15 @@
         "FORM_CHECKBOX_LINK": "Datenschutzerklärung",
         "FORM_CHECKBOX_SUFFIX": "gelesen und bin mit der Verarbeitung meiner Daten wie beschrieben einverstanden.",
         "FORM_BTN": "Nachricht absenden",
-        "FORM_FEEDBACK": "Deine Anfrage wurde versendet."
-      },
-      "FOOTER": {
+        "FORM_FEEDBACK": "Deine Anfrage wurde versendet.",
+        "NAME_REQUIRED": "Name wird benötigt",
+        "MAIL_REQUIRED": "Bitte gib eine E-Mailadresse ein",
+        "MAIL_FALSE": "Bitte gib eine gültige E-Mailadresse ein",
+        "MESSAGE_REQUIRED": "Bitte gib eine Nachricht ein.",
+        "MESSAGE_MIN_LENGTH": "Die Nachricht muss mindestens 5 Zeichen lang sein.",
+        "PRIVACY_REQUIRED": "Bitte akzeptieren Sie die Datenschutzrichtlinien"
+    },
+    "FOOTER": {
         "IMPRINT": "Impressum"
     }
 }

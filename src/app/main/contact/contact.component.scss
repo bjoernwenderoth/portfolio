@@ -61,6 +61,16 @@ section {
     }
 }
 
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    
+    mat-error {
+      font-size: 12px;
+    }
+  }
+
 .mat-bottom-sheet-container {
     z-index: 10000 !important;
 }
