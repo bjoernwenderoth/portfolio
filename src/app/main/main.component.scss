@@ -1,7 +1,6 @@
 @import './../../styles.scss';
 
 main {
-    margin-top: 110px;
     position: relative;
     overflow-x: hidden;
     // max-width: 1920px;
@@ -9,6 +8,8 @@ main {
     flex-direction: column;
     width: 100vw;
     z-index: 0;
+    padding-top: 150px;
+
     >div {
         width: 100%;
         max-width: 1920px;
@@ -17,11 +18,13 @@ main {
 
 .bow-hero {
     position: absolute;
-    height: 100vh;
-    width: 100vw;
-    top: 30vh;
+    width: 1920px;
+    height: 1100px;
+    top: 730px;
     z-index: -1;
 }
+
+
 
 app-hero-section,
 app-about-me {
@@ -51,11 +54,11 @@ app-portfolio {
     position: relative;
     width: 100%;
     height: auto;
-    min-height: 10vh; 
+    min-height: 10vh;
     background-image: url('./../../assets/img/background-images/blue_blur_skills.png');
     background-repeat: no-repeat;
     background-position: -40vw 5%;
-    background-size: 60vw auto; 
+    background-size: 60vw auto;
     z-index: -5;
 }
 
@@ -68,7 +71,7 @@ app-portfolio {
     position: relative;
     width: 100%;
     height: auto;
-    min-height: 10vh; 
+    min-height: 10vh;
     background-image: url('./../../assets/img/background-images/purple_blur_portfolio.png');
     background-repeat: no-repeat;
     background-position: 39vw 36%;
@@ -98,4 +101,20 @@ app-portfolio {
     background-position: -12vw calc(100% + 23vw);
     background-size: 60vw auto;
     // z-index: -5;
+}
+
+// -------------------- MEDIA -------------------- //
+
+// BOW HERO //
+$start-width: 1950px;
+$start-top: 700px;
+$step: 100px; // Die Differenz der max-width in px
+$top-decrement: 50px; // Der Wert, um den sich 'top' reduziert
+
+@for $i from 0 through 11 {
+  @media (max-width: #{$start-width - $i * $step}) {
+    .bow-hero {
+      top: #{$start-top - $i * $top-decrement};
+    }
+  }
 }
