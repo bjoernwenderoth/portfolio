@@ -45,7 +45,7 @@ section {
 .profil-picture-container {
     flex: 5;
     align-self: flex-end; //    
-    background-image: url(./../../../assets/img/background-images/blur_group.png);
+    background-image: url(/assets/img/background-images/blur_group.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -106,6 +106,8 @@ section {
 }
 
 .schraeg {
+    font-size: min(5.3cqw, 55px);
+    margin-right: -0.9cqw;
     transform: rotate(-90deg);
     text-wrap: nowrap;
 }
@@ -160,13 +162,36 @@ button {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 899px) {
     .hide-on-mobile {
         display: none;
     }
+
+    .name-title {
+        >h1 {
+            font-size: min(8cqw, 55px);
+            margin-bottom: -3cqw;
+        }
+
+        >h2.purple {
+            font-size: min(7.6cqw, 52px);
+        }
+    }
+
+    .schraeg {
+        font-size: min(7cqw, 45px);
+        margin-right: -3cqw;
+        margin-left: -30px;
+    }
+
+    .container-bow {
+        >img {
+            height: 28vh;
+        }
+    }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 900px) {
     .hide-on-desktop {
         display: none;
     }

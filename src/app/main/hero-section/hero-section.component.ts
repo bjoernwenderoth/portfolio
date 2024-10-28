@@ -1,5 +1,5 @@
 import { NgStyle } from '@angular/common';
-import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -11,20 +11,25 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class HeroSectionComponent {
   isMobile: boolean = false;
+  imagePath: string = '/assets/img/background-images/bow_hero.png';
 
-  // Check screen size on component initialization
   ngOnInit() {
     this.checkScreenSize();
   }
 
-  // Listen to window resize events
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     this.checkScreenSize();
   }
 
-  // Method to check if the screen width is less than or equal to 768px
   checkScreenSize() {
-    this.isMobile = window.innerWidth <= 768;
+    this.isMobile = window.innerWidth <= 899;
+    this.updateImagePath();
+  }
+
+  private updateImagePath() {
+    this.imagePath = this.isMobile 
+      ? '/assets/img/background-images/bow_hero_mobile.png'
+      : '/assets/img/background-images/bow_hero.png';
   }
 }

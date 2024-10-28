@@ -11,16 +11,16 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class SkillsComponent {
   logos = [
-    { imgSrc: './../../../assets/img/icons/html_icon.png', altText: 'html_icon', labelText: 'HTML' },
-    { imgSrc: './../../../assets/img/icons/css_icon.png', altText: 'css_icon', labelText: 'CSS' },
-    { imgSrc: './../../../assets/img/icons/javascript_icon.png', altText: 'javascript_icon', labelText: 'JavaScript' },
-    { imgSrc: './../../../assets/img/icons/typescript_icon.png', altText: 'typescript_icon', labelText: 'TypeScript' },
-    { imgSrc: './../../../assets/img/icons/angular_icon.png', altText: 'angular_icon', labelText: 'Angular' },
-    { imgSrc: './../../../assets/img/icons/firebase_icon.png', altText: 'firebase_icon', labelText: 'Firebase' },
-    { imgSrc: './../../../assets/img/icons/git_icon.png', altText: 'git_icon', labelText: 'GIT' },
-    { imgSrc: './../../../assets/img/icons/api_icon.png', altText: 'api_icon', labelText: 'Rest-Api' },
-    { imgSrc: './../../../assets/img/icons/scrum_icon.png', altText: 'scrum_icon', labelText: 'Scrum' },
-    { imgSrc: './../../../assets/img/icons/material_design_icon.png', altText: 'material_design_icon', labelText: 'Material Design' },
+    { imgSrc: '/assets/img/icons/html_icon.png', altText: 'html_icon', labelText: 'HTML' },
+    { imgSrc: '/assets/img/icons/css_icon.png', altText: 'css_icon', labelText: 'CSS' },
+    { imgSrc: '/assets/img/icons/javascript_icon.png', altText: 'javascript_icon', labelText: 'JavaScript' },
+    { imgSrc: '/assets/img/icons/typescript_icon.png', altText: 'typescript_icon', labelText: 'TypeScript' },
+    { imgSrc: '/assets/img/icons/angular_icon.png', altText: 'angular_icon', labelText: 'Angular' },
+    { imgSrc: '/assets/img/icons/firebase_icon.png', altText: 'firebase_icon', labelText: 'Firebase' },
+    { imgSrc: '/assets/img/icons/git_icon.png', altText: 'git_icon', labelText: 'GIT' },
+    { imgSrc: '/assets/img/icons/api_icon.png', altText: 'api_icon', labelText: 'Rest-Api' },
+    { imgSrc: '/assets/img/icons/scrum_icon.png', altText: 'scrum_icon', labelText: 'Scrum' },
+    { imgSrc: '/assets/img/icons/material_design_icon.png', altText: 'material_design_icon', labelText: 'Material Design' },
   ];
 
   ngAfterViewInit() {

@@ -3,7 +3,6 @@
 main {
     position: relative;
     overflow-x: hidden;
-    // max-width: 1440px;
     @include d-flex(center, center);
     flex-direction: column;
     width: 100vw;
@@ -16,7 +15,6 @@ main {
     }
 }
 
-
 app-hero-section,
 app-about-me {
     position: relative;
@@ -28,7 +26,7 @@ app-about-me {
     width: 100%;
     height: auto;
     min-height: 10vh;
-    background-image: url('./../../assets/img/background-images/purple_blur_aboutme.png');
+    background-image: url('/assets/img/background-images/purple_blur_aboutme.png');
     background-repeat: no-repeat;
     background-position: 85vw 80vh;
     background-size: auto 60vh;
@@ -46,7 +44,7 @@ app-portfolio {
     width: 100%;
     height: auto;
     min-height: 10vh;
-    background-image: url('./../../assets/img/background-images/blue_blur_skills.png');
+    background-image: url('/assets/img/background-images/blue_blur_skills.png');
     background-repeat: no-repeat;
     background-position: -40vw 5%;
     background-size: 60vw auto;
@@ -63,7 +61,7 @@ app-portfolio {
     width: 100%;
     height: auto;
     min-height: 10vh;
-    background-image: url('./../../assets/img/background-images/purple_blur_portfolio.png');
+    background-image: url('/assets/img/background-images/purple_blur_portfolio.png');
     background-repeat: no-repeat;
     background-position: 39vw 36%;
     background-size: 42vw auto;
@@ -75,7 +73,7 @@ app-portfolio {
     width: 100%;
     height: auto;
     min-height: 10vh;
-    background-image: url('./../../assets/img/background-images/blue_blur_portfolio_bottom.png');
+    background-image: url('/assets/img/background-images/blue_blur_portfolio_bottom.png');
     background-repeat: no-repeat;
     background-position: 75vw 100%;
     background-size: 65vw auto;
@@ -87,11 +85,17 @@ app-portfolio {
     width: 100%;
     height: auto;
     min-height: 10vh;
-    background-image: url('./../../assets/img/background-images/contact_blur.png');
+    background-image: url('/assets/img/background-images/contact_blur.png');
     background-repeat: no-repeat;
     background-position: -12vw calc(100% + 23vw);
-    background-size: 60vw auto;
-    // z-index: -5;
+    background-size: 55vw auto;
+
 }
 
 // -------------------- MEDIA -------------------- //
+
+@media (max-width: 900px) {
+    main {
+        padding-top: 110px;
+    }
+}

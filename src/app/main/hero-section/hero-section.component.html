@@ -3,7 +3,7 @@
     <div>
       <div class="container-top">
         <div class="container-bow">
-          <img id="dynamicImage" src="/assets/img/background-images/bow_hero.png" />
+          <img id="dynamicImage" [src]="imagePath" />
         </div>
 
         <div class="profil-picture-container">
@@ -49,19 +49,19 @@
           <div class="social-links">
             <div></div>
             <a href="https://github.com/bjoernwenderoth/" target="_blank">
-              <img src="./../../assets/img/icons/github_icon.png" alt="GitHub" />
+              <img src="/assets/img/icons/github_icon.png" alt="GitHub" />
             </a>
             <a href="mailto:bjoernwe1989@googlemail.com">
-              <img src="./../../assets/img/icons/mail_icon.png" alt="Mail" />
+              <img src="/assets/img/icons/mail_icon.png" alt="Mail" />
             </a>
             <a href="https://www.linkedin.com/in/bj%C3%B6rn-wenderoth-3b4717260/" target="_blank">
-              <img src="./../../assets/img/icons/linkedin_icon.png" alt="LinkedIn" />
+              <img src="/assets/img/icons/linkedin_icon.png" alt="LinkedIn" />
             </a>
             <a href="mailto:bjoernwe1989&#64;gmail.com" class="hide-on-mobile">bjoernwe1989&#64;gmail.com</a>
           </div>
           <div class="scroll-down hide-on-mobile">
             <span>{{ "HERO_COMPONENT.SCROLL" | translate }}</span>
-            <img src="./../../../assets/img/icons/arrow-right.png" alt="arrow-right" />
+            <img src="/assets/img/icons/arrow-right.png" alt="arrow-right" />
           </div>
         </div>
       </div>
