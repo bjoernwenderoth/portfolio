@@ -3,7 +3,7 @@
 main {
     position: relative;
     overflow-x: hidden;
-    // max-width: 1920px;
+    // max-width: 1440px;
     @include d-flex(center, center);
     flex-direction: column;
     width: 100vw;
@@ -12,18 +12,9 @@ main {
 
     >div {
         width: 100%;
-        max-width: 1920px;
+        max-width: 1440px;
     }
 }
-
-.bow-hero {
-    position: absolute;
-    width: 1920px;
-    height: 1100px;
-    top: 730px;
-    z-index: -1;
-}
-
 
 
 app-hero-section,
@@ -104,17 +95,3 @@ app-portfolio {
 }
 
 // -------------------- MEDIA -------------------- //
-
-// BOW HERO //
-$start-width: 1950px;
-$start-top: 700px;
-$step: 100px; // Die Differenz der max-width in px
-$top-decrement: 50px; // Der Wert, um den sich 'top' reduziert
-
-@for $i from 0 through 11 {
-  @media (max-width: #{$start-width - $i * $step}) {
-    .bow-hero {
-      top: #{$start-top - $i * $top-decrement};
-    }
-  }
-}

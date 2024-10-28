@@ -1,39 +1,69 @@
 <section>
   <div>
-    <div class="container-top">
-      <div class="profil-picture-container">
-        <img src="./../../../assets/img/picture-hero-section.png" alt="picture-hero-section" />
-      </div>
-      <div class="profil-text-container">
-        <div>
-          <h2>I am</h2>
-          <div class="name-title">
-            <h1>BJÖRN WENDEROTH</h1>
-            <h2 class="purple fade-in-effect">FRONTEND DEVELOPER</h2>
+    <div>
+      <div class="container-top">
+        <div class="container-bow">
+          <img id="dynamicImage" src="/assets/img/background-images/bow_hero.png" />
+        </div>
+
+        <div class="profil-picture-container">
+          <img src="/assets/img/picture-hero-section.png" alt="picture-hero-section" />
+        </div>
+
+        <div style="flex: 1; align-self: center" class="hide-on-mobile">
+          <div class="profil-text-container">
+            <div>
+              <h2>I am</h2>
+              <div class="name-title">
+                <h1>BJÖRN WENDEROTH</h1>
+                <h2 class="purple fade-in-effect">FRONTEND DEVELOPER</h2>
+              </div>
+            </div>
+            <div>
+              <a href="#contact">
+                <button>{{ "HERO_COMPONENT.BTN" | translate }}</button>
+              </a>
+            </div>
           </div>
         </div>
-        <a href="#contact">
-          <button>{{ "HERO_COMPONENT.BTN" | translate }}</button>
-        </a>
       </div>
-    </div>
-    <div class="social-scroll-container">
-      <div class="social-links">
-        <div></div>
-        <a href="https://github.com/bjoernwenderoth/" target="_blank">
-          <img src="./../../assets/img/icons/github_icon.png" alt="GitHub" />
-        </a>
-        <a href="mailto:bjoernwe1989@googlemail.com">
-          <img src="./../../assets/img/icons/mail_icon.png" alt="Mail" />
-        </a>
-        <a href="https://www.linkedin.com/in/bj%C3%B6rn-wenderoth-3b4717260/" target="_blank">
-          <img src="./../../assets/img/icons/linkedin_icon.png" alt="LinkedIn" />
-        </a>
-        <a href="mailto:bjoernwe1989&#64;gmail.com">bjoernwe1989&#64;gmail.com</a>
-      </div>
-      <div class="scroll-down">
-        <span>{{ "HERO_COMPONENT.SCROLL" | translate }}</span>
-        <img src="./../../../assets/img/icons/arrow-right.png" alt="arrow-right" />
+
+      <div style="
+          height: 180px;
+          z-index: 10;
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 20px;
+        " [ngStyle]="{ 'justify-content': isMobile ? 'space-around' : 'flex-start' }">
+        <div class="hide-on-desktop">
+          <div style="display: flex; justify-content: center; align-items: center">
+            <h2 class="schraeg">I am</h2>
+            <div class="name-title">
+              <h1>BJÖRN WENDEROTH</h1>
+              <h2 class="purple fade-in-effect">FRONTEND DEVELOPER</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-scroll-container">
+          <div class="social-links">
+            <div></div>
+            <a href="https://github.com/bjoernwenderoth/" target="_blank">
+              <img src="./../../assets/img/icons/github_icon.png" alt="GitHub" />
+            </a>
+            <a href="mailto:bjoernwe1989@googlemail.com">
+              <img src="./../../assets/img/icons/mail_icon.png" alt="Mail" />
+            </a>
+            <a href="https://www.linkedin.com/in/bj%C3%B6rn-wenderoth-3b4717260/" target="_blank">
+              <img src="./../../assets/img/icons/linkedin_icon.png" alt="LinkedIn" />
+            </a>
+            <a href="mailto:bjoernwe1989&#64;gmail.com" class="hide-on-mobile">bjoernwe1989&#64;gmail.com</a>
+          </div>
+          <div class="scroll-down hide-on-mobile">
+            <span>{{ "HERO_COMPONENT.SCROLL" | translate }}</span>
+            <img src="./../../../assets/img/icons/arrow-right.png" alt="arrow-right" />
+          </div>
+        </div>
       </div>
     </div>
   </div>
