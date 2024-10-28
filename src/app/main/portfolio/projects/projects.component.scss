@@ -7,6 +7,7 @@ section {
     margin-bottom: -20px;
 
     >div {
+        flex: 1;
         >div {
             @include d-flex(flex-start, center);
             padding-top: 35px;
@@ -20,7 +21,7 @@ section {
 }
 
 .project-img {
-    width: 40vw;
+    flex: 1;
 }
 
 h2 {

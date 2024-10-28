@@ -1,6 +1,6 @@
 <section *ngFor="let project of projects; let i = index">
     <ng-container *ngIf="isWideScreen() && i % 2 === 0; else reverseLayout">
-      <img src="./../../../../assets/img/{{ project.img }}.png" alt="{{ project.img }}">
+      <img class="project-img" src="./../../../../assets/img/{{ project.img }}.png" alt="{{ project.img }}">
       <div>
         <h2>{{ project.title }}</h2>
         <h3>{{ project.technologies }}</h3>

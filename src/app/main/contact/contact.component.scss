@@ -1,17 +1,13 @@
 @import './../../../styles.scss';
 
 section {
-
-    @include d-flex(space-between, center);
-    flex-direction: column;
-    width: 100vw;
     padding-bottom: 200px;
 
     >div {
         @include d-flex(flex-start, center);
         flex-direction: row;
         gap: 30px;
-        width: 100vw;
+        width: 100%;
         margin-bottom: 50px;
 
         >.line {
@@ -21,12 +17,19 @@ section {
         }
     }
 
+    .container {
+        display: flex;
+        align-items: flex-start;
+        gap: 200px;
+    }
+
     .text-container {
         @include d-flex(center, flex-start);
         flex-direction: column;
         text-align: start;
         gap: 38px;
         padding-left: 100px;
+        flex: 1;
 
         >h2 {
             font-size: 32px;
@@ -34,15 +37,9 @@ section {
         }
     }
 
-    .container {
-        display: grid;
-        align-items: flex-start;
-        grid-template-columns: 1fr 1fr;
-        gap: 200px;
-    }
-
     .form-container {
-        padding-right: 100px;
+        flex: 1;
+        padding-right: 50px;
 
         >form {
             @include d-flex(flex-start, flex-start);
@@ -52,7 +49,6 @@ section {
 
     mat-form-field {
         width: 100%;
-        max-width: 620px;
         margin-bottom: 8px;
     }
 
