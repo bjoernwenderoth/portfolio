@@ -167,6 +167,13 @@ button {
         display: none;
     }
 
+    section {
+
+        >div {
+            max-height: none;
+        }
+    }
+
     .name-title {
         >h1 {
             font-size: min(8cqw, 55px);

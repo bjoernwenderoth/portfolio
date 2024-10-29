@@ -61,11 +61,8 @@ section {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
-    
-    mat-error {
-      font-size: 12px;
-    }
-  }
+}
+  
 
 .mat-bottom-sheet-container {
     z-index: 10000 !important;
@@ -98,12 +95,12 @@ a {
 }
 
 .privacy-link {
-    color: $color-blue; // Hier kannst du die Farbe anpassen
+    color: $color-blue;
     font-weight: bold;
     z-index: 1000;
 
     &:hover {
-        text-decoration: underline; // Unterstreichung beim Hover-Effekt
+        text-decoration: underline;
     }
 }
 

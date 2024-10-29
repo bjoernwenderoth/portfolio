@@ -71,7 +71,7 @@
 
           <!-- Fehlermeldung für Checkbox -->
           <mat-error *ngIf="!contactData.privacy && (name.touched || email.touched || message.touched)">
-            <span style="color: #f44336">
+            <span style="color: #f44336;">
               {{ "CONTACT_COMPONENT.PRIVACY_REQUIRED" | translate }}
             </span>
           </mat-error>

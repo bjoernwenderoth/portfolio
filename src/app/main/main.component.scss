@@ -2,18 +2,32 @@
 
 main {
     position: relative;
-    overflow-x: hidden;
     @include d-flex(center, center);
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     z-index: 0;
     padding-top: 150px;
-
-    >div {
-        width: 100%;
-        max-width: 1440px;
-    }
 }
+
+.content-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+// Die Background-Container bleiben verschachtelt, aber ohne max-width
+.background-container-aboutme,
+.background-container-skills,
+.background-container-portfolio,
+.background-container-portfolio-bottom,
+.background-container-contact {
+    width: 100%;
+    position: relative;
+}
+
+// Rest des CSS bleibt unverändert
 
 app-hero-section,
 app-about-me {
@@ -30,7 +44,7 @@ app-about-me {
     background-repeat: no-repeat;
     background-position: 85vw 80vh;
     background-size: auto 60vh;
-    z-index: auto;
+    z-index: -5;
 }
 
 app-skills,
@@ -63,7 +77,7 @@ app-portfolio {
     min-height: 10vh;
     background-image: url('/assets/img/background-images/purple_blur_portfolio.png');
     background-repeat: no-repeat;
-    background-position: 39vw 36%;
+    background-position: 70vw 36%;
     background-size: 42vw auto;
     z-index: -5;
 }
@@ -75,8 +89,8 @@ app-portfolio {
     min-height: 10vh;
     background-image: url('/assets/img/background-images/blue_blur_portfolio_bottom.png');
     background-repeat: no-repeat;
-    background-position: 75vw 100%;
-    background-size: 65vw auto;
+    background-position: 87vw 160%;
+    background-size: 45vw auto;
     z-index: -5;
 }
 
@@ -89,7 +103,7 @@ app-portfolio {
     background-repeat: no-repeat;
     background-position: -12vw calc(100% + 23vw);
     background-size: 55vw auto;
-
+    z-index: -5;
 }
 
 // -------------------- MEDIA -------------------- //

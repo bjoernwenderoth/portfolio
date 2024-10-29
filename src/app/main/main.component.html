@@ -1,19 +1,25 @@
 <main>
     <div class="background-container-aboutme">
-        <div>
+        <div class="content-wrapper">
             <app-hero-section id="heroSection"></app-hero-section>
             <app-about-me id="aboutMeSection"></app-about-me>
         </div>
         <div class="background-container-skills">
-            <app-skills id="skillSection"></app-skills>
+            <div class="content-wrapper">
+                <app-skills id="skillSection"></app-skills>
+            </div>
             <div class="background-container-portfolio">
-                <div class="background-container-portfolio-bottom">
+                <div class="content-wrapper">
                     <app-portfolio id="portfolioSection"></app-portfolio>
                 </div>
+                <div class="background-container-portfolio-bottom">
+                    <div class="background-container-contact">
+                        <div class="content-wrapper">
+                            <app-contact id="contactSection"></app-contact>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="background-container-contact">
-            <app-contact id="contactSection"></app-contact>
         </div>
     </div>
 </main>
