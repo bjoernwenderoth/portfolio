@@ -1,0 +1,82 @@
+{
+    "HEADER": {
+        "ABOUT_ME": "Über mich",
+        "CONTACT": "Kontakt"
+    },
+    "HERO_COMPONENT": {
+        "BTN": "Lass uns sprechen",
+        "SCROLL": "Scroll down"
+    },
+    "ABOUT_ME_COMPONENT": {
+        "HEADLINE": "Über mich",
+        "DESCRIPTION": "Ich bin Frontend-Entwickler aus dem Landkreis Kassel und bringe Expertise in modernen Web-Technologien wie Angular, React, JavaScript und TypeScript mit. Mein Schwerpunkt liegt in der Entwicklung von benutzerfreundlichen und performanten Webseiten und Webapplikationen.",
+        "REMOTE_WORK": "Auch wenn ich im Herzen Nordhessens sitze, bin ich nicht an einen festen Standort gebunden. Ich arbeite remote und biete Unternehmen in ganz Deutschland meine Expertise an, um digitale Projekte flexibel und effizient umzusetzen.",
+        "PROJECT_APPROACH": "Von der ersten Idee bis zur Fertigstellung deines Projektes begleite ich dich durch alle Entwicklungsphasen. Gemeinsam entwickeln wir maßgeschneiderte Lösungen, die auf deine Anforderungen und die Bedürfnisse deiner Nutzer abgestimmt sind - von der ersten Skizze bis zum letzten Schliff.",
+        "UX_UI": "Mit meinem UX/UI Design Hintergrund biete ich das komplette Paket für erfolgreiche Webprojekte. Ich verstehe sowohl die technische Entwicklung als auch die Bedeutung eines nutzerzentrierten Designs für ansprechende und intuitive Erlebnisse."
+    },
+    "SKILLS_COMPONENT": {
+        "LEARNING": "Kontinuierlich lernen",
+        "EXPERIENCE_TECH": "Ich habe an verschiedenen Projekten gearbeitet und dabei verschiedene Frontend-Technologien verwendet. Ich probiere gerne neue Tools und Techniken aus, um dazuzulernen und auf dem neuesten Stand der Webentwicklung zu bleiben.",
+        "SKILLS_OFFER": "Andere Kompetenzen gesucht?",
+        "CONTACT_INVITE": "Schreib mir, ich freue mich darauf, mein Wissen zu erweitern!",
+        "BTN_CONTACT": "Kontakt"
+    },
+    "PORTFOLIO_COMPONENT": {
+        "DESCRIPTION": "Hier ist eine Auswahl meiner Projekte - interagier mit den Projekten, um meine Fähigkeiten in Aktion zu sehen."
+    },
+    "PROJECT_COMPONENT": {
+        "DESCRIPTION_JOIN": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben per Drag & Drop, ordnen Sie Benutzer und Kategorien zu.",
+        "DESCRIPTION_ELPOLLOLOCO": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Giftflaschen zu finden, um gegen das Killerhuhn zu kämpfen.",
+        "DESCRIPTION_POKEDEX": "Basiert auf der PokéAPI, einer einfachen Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
+    },
+    "CONTACT_COMPONENT": {
+        "HEADLINE": "Kontakt",
+        "CHALLENGE_PROMPT": "Hast du eine Herausforderung, die eine Lösung braucht?",
+        "CONTACT_FORM_INVITE": "Schreib mir einfach über dieses Formular – ich bin gespannt auf deine Ideen und freue mich darauf, mit meiner Arbeit zu deinen Projekten beizutragen.",
+        "FRONTEND_DEVELOPER_OFFER": "Du suchst einen Frontend-Entwickler?",
+        "CONTACT_ME": "Kontaktiere mich!",
+        "FORM_TEXTBOX": "Deine Nachricht...",
+        "FORM_CHECKBOX_TEXT": "Ich habe die ",
+        "FORM_CHECKBOX_LINK": "Datenschutzerklärung",
+        "FORM_CHECKBOX_SUFFIX": "gelesen und bin mit der Verarbeitung meiner Daten wie beschrieben einverstanden.",
+        "FORM_BTN": "Nachricht absenden",
+        "FORM_FEEDBACK": "Deine Anfrage wurde versendet.",
+        "NAME_REQUIRED": "Name wird benötigt",
+        "MAIL_REQUIRED": "Bitte gib eine E-Mailadresse ein",
+        "MAIL_FALSE": "Bitte gib eine gültige E-Mailadresse ein",
+        "MESSAGE_REQUIRED": "Bitte gib eine Nachricht ein.",
+        "MESSAGE_MIN_LENGTH": "Die Nachricht muss mindestens 5 Zeichen lang sein.",
+        "PRIVACY_REQUIRED": "Bitte akzeptieren Sie die Datenschutzrichtlinien"
+    },
+    "FOOTER": {
+        "IMPRINT": "Impressum"
+    },
+    "IMPRINT": {
+        "HEADLINE": "Impressum",
+        "ADRESS_TITLE": "Angaben gemäß § 5 TMG",
+        "COUNTRY": "Deutschland",
+        "CONTACT_TITLE": "Kontakt",
+        "PHONE": "Telefon",
+        "RESPONSIBLE_TITLE": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
+        "LIABILITY_FOR_CONTENT": {
+            "TITLE": "Haftung für Inhalte",
+            "PARAGRAPH_1": "Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
+            "PARAGRAPH_2": "Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen."
+        },
+        "LIABILITY_FOR_LINKS": {
+            "TITLE": "Haftung für Links",
+            "PARAGRAPH_1": "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.",
+            "PARAGRAPH_2": "Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen."
+        },
+        "COPYRIGHT": {
+            "TITLE": "Urheberrecht",
+            "PARAGRAPH_1": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.",
+            "PARAGRAPH_2": "Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen."
+        },
+        "BACK": "Zurück"
+    },
+    "POLICY": {
+        "HEADLINE": "Datenschutzerklärung",
+        "BACK": "Zurück"
+    }
+}

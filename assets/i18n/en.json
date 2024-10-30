@@ -1,0 +1,82 @@
+{
+    "HEADER": {
+        "ABOUT_ME": "About me",
+        "CONTACT": "Contact"
+    },
+    "HERO_COMPONENT": {
+        "BTN": "Let's talk!",
+        "SCROLL": "Scroll down"
+    },
+    "ABOUT_ME_COMPONENT": {
+        "HEADLINE": "About me",
+        "DESCRIPTION": "I am a frontend developer from Kassel, Germany, with expertise in modern web technologies such as Angular, React, JavaScript and TypeScript. My focus is on the development of user-friendly and high-performance websites and web applications.",
+        "REMOTE_WORK": "Although I am based in the heart of northern Hessen, I am not tied to a fixed location. I work remotely and offer my expertise to companies throughout Germany to implement digital projects flexibly and efficiently.",
+        "PROJECT_APPROACH": "From the initial idea to the completion of your project, I will guide you through all stages of development. From the first sketch to the finishing touches, we will work together to create a solution that is tailored to your needs and the needs of your users.",
+        "UX_UI": "With my background in UX/UI design, I offer the complete package for successful web projects. I understand both technical development and the importance of user-centred design for engaging, intuitive experiences."
+    },
+    "SKILLS_COMPONENT": {
+        "LEARNING": "Continually learning",
+        "EXPERIENCE_TECH": "I have worked on various projects using different front-end technologies. I enjoy trying out new tools and techniques to learn and keep up with the latest in web development.",
+        "SKILLS_OFFER": "Looking for other skills?",
+        "CONTACT_INVITE": "Write to me, I look forward to expanding my knowledge!",
+        "BTN_CONTACT": "Contact"
+    },
+    "PORTFOLIO_COMPONENT": {
+        "DESCRIPTION": "Here is a selection of my projects - interact with the projects to see my skills in action."
+    },
+    "PROJECT_COMPONENT": {
+        "DESCRIPTION_JOIN": "Kanban-style task manager. Create and organise tasks using drag and drop, assign users and categories.",
+        "DESCRIPTION_ELPOLLOLOCO": "A simple jump and run game based on an object oriented approach. Help Pepe find coins and poison bottles to fight the killer chicken.",
+        "DESCRIPTION_POKEDEX": "Based on the PokéAPI, a simple library that provides and catalogues Pokémon information."
+    },
+    "CONTACT_COMPONENT": {
+        "HEADLINE": "Contact",
+        "CHALLENGE_PROMPT": "You have a challenge? You need a solution?",
+        "CONTACT_FORM_INVITE": "Feel free to contact me using this form - I'm looking forward to hearing your ideas and contributing to your projects with my work.",
+        "FRONTEND_DEVELOPER_OFFER": "Are you looking for a frontend developer?",
+        "CONTACT_ME": "Get in touch with me!",
+        "FORM_TEXTBOX": "Your message...",
+        "FORM_CHECKBOX_TEXT": "I have read the ",
+        "FORM_CHECKBOX_LINK": "privacy policy",
+        "FORM_CHECKBOX_SUFFIX": "and agree to the processing of my data as described.",
+        "FORM_BTN": "Send message",
+        "FORM_FEEDBACK": "Your request has been sent.",
+        "NAME_REQUIRED": "Name is required",
+        "MAIL_REQUIRED": "Email is required",
+        "MAIL_FALSE": "Please enter a valid email address",
+        "MESSAGE_REQUIRED": "Please enter a message",
+        "MESSAGE_MIN_LENGTH": "The message must be at least 5 characters long",
+        "PRIVACY_REQUIRED": "Please accept the privacy policy"
+    },
+    "FOOTER": {
+        "IMPRINT": "Imprint"
+    },
+    "IMPRINT": {
+        "HEADLINE": "Imprint",
+        "ADRESS_TITLE": "Information according to § 5 TMG",
+        "COUNTRY": "Germany",
+        "CONTACT_TITLE": "Contact",
+        "PHONE": "Phone",
+        "RESPONSIBLE_TITLE": "Responsible for content according to § 55 para. 2 RStV",
+        "LIABILITY_FOR_CONTENT": {
+            "TITLE": "Liability for Content",
+            "PARAGRAPH_1": "As a service provider, we are responsible for our own content on these pages in accordance with § 7 para.1 TMG under general laws. However, according to §§ 8 to 10 TMG, we are not obliged as a service provider to monitor transmitted or stored third-party information or to investigate circumstances indicating illegal activity.",
+            "PARAGRAPH_2": "Obligations to remove or block the use of information under general laws remain unaffected. However, liability in this respect is only possible from the time of knowledge of a specific infringement. Upon notification of such violations, we will remove the content immediately."
+        },
+        "LIABILITY_FOR_LINKS": {
+            "TITLE": "Liability for Links",
+            "PARAGRAPH_1": "Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the linked sites is always responsible for the contents of the linked sites. The linked sites were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking.",
+            "PARAGRAPH_2": "However, permanent content control of the linked pages is not reasonable without concrete evidence of an infringement. Upon notification of violations, we will remove such links immediately."
+        },
+        "COPYRIGHT": {
+            "TITLE": "Copyright",
+            "PARAGRAPH_1": "The content and works created by the site operators on these pages are subject to German copyright law. Reproduction, editing, distribution, and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use.",
+            "PARAGRAPH_2": "Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is marked as such."
+        },
+        "BACK": "back"
+    },
+    "POLICY": {
+        "HEADLINE": "Privacy policy",
+        "BACK": "back"
+    }
+}
