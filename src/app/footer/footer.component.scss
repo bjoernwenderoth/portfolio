@@ -1,13 +1,12 @@
 @import './../../styles.scss';
 
 footer {
-    overflow: hidden;
-    @include side-space;
     @include d-flex(center, center);
-    width: 100vw;
     height: 290px;
     border-top: 4px solid $color-accent;
     flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
 
     >div {
         @include d-flex(space-between, center);

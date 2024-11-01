@@ -12,10 +12,8 @@
 
 body {
   background-color: $color-dark;
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
 }
-
 
 body a {
   text-decoration: none;
@@ -57,7 +55,6 @@ button {
 ::ng-deep .´-raised-button.mat-primary {
   --mdc-protected-button-container-color: #0f8dac;
 }
-
 
 ::ng-deep .mat-bottom-sheet-container {
   display: flex !important;

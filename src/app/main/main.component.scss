@@ -17,7 +17,6 @@ main {
     z-index: 1;
 }
 
-// Die Background-Container bleiben verschachtelt, aber ohne max-width
 .background-container-aboutme,
 .background-container-skills,
 .background-container-portfolio,
@@ -26,8 +25,6 @@ main {
     width: 100%;
     position: relative;
 }
-
-// Rest des CSS bleibt unverändert
 
 app-hero-section,
 app-about-me {
@@ -61,7 +58,7 @@ app-portfolio {
     background-image: url('/assets/img/background-images/blue_blur_skills.png');
     background-repeat: no-repeat;
     background-position: -40vw 5%;
-    background-size: 60vw auto;
+    background-size: 50vw auto;
     z-index: -5;
 }
 

@@ -1,22 +1,26 @@
 @import './../../styles.scss';
 
 header {
-    @include side-space;
     @include d-flex(center, center);
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     background-color: $color-dark;
-    width: 100vw;
     font-size: 23px;
     z-index: 1000;
 
     >div {
         @include d-flex(space-between, center);
+        padding-left: 100px;
+        padding-right: 100px;
         width: 100%;
         max-width: 1440px;
         height: 110px;
+
         >a {
             @include d-flex(center, center);
+
             >img {
                 width: 150px;
                 height: auto;
@@ -76,8 +80,11 @@ a {
 @media (max-width: 769px) {
     header {
         height: 100px;
-        padding-left: 25px;
-        padding-right: 25px;
+
+        >div {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
 
         >img {
             width: 120px;
@@ -108,15 +115,13 @@ a {
         background-color: rgb(71, 71, 71);
         z-index: 100;
         font-size: 23px;
-        overflow: hidden;
 
         >div {
-            width: 100vw;
+            // width: 100vw;
             height: 100vh;
             @include d-flex(center, center);
             flex-direction: column;
             gap: 30px;
-            overflow: hidden;
 
         }
 

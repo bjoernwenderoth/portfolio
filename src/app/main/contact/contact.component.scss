@@ -62,7 +62,11 @@ section {
     flex-direction: column;
     margin-bottom: 1rem;
 }
-  
+
+.error-space {
+    height: 20px;
+    margin-top: 4px;
+}
 
 .mat-bottom-sheet-container {
     z-index: 10000 !important;
@@ -73,11 +77,51 @@ section {
 }
 
 ::ng-deep .mdc-text-field--invalid .mdc-notched-outline>* {
-    border-color: red !important;
+    border-color: #f44336 !important;
 }
 
 ::ng-deep html {
---mdc-outlined-text-field-caret-color: auto; 
+    --mdc-outlined-text-field-caret-color: auto;
+}
+
+/* Grundlegende Autofill-Styles */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+input:-webkit-autofill::first-line {
+    -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+    -webkit-text-fill-color: #f2f2f2 !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    background-color: transparent !important;
+    caret-color: #f2f2f2  !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Spezifisch für Material Input-Felder */
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    background-color: transparent !important;
+}
+
+::ng-deep .mat-input-element {
+    background-color: transparent !important;
+}
+
+/* Firefox spezifisch */
+input:autofill {
+    background-color: transparent !important;
+    color: #f2f2f2  !important;
+}
+
+/* Zusätzliche Overrides für den Input-Container */
+::ng-deep .mat-form-field-flex {
+    background-color: transparent !important;
+}
+
+/* Spezifischer Override für den Autofill-Hintergrund */
+input:-webkit-autofill::selection {
+    background-color: transparent !important;
 }
 
 .invalid {
@@ -107,6 +151,7 @@ a {
 md-checkbox .md-label {
     pointer-events: auto;
 }
+
 md-checkbox .md-label span {
     pointer-events: none;
     -webkit-user-select: none;
@@ -140,7 +185,7 @@ button {
 // -------------------- MEDIA -------------------- //
 
 @media (max-width: 769px) {
-    
+
     .container {
         padding-left: 25px !important;
         padding-right: 25px !important;

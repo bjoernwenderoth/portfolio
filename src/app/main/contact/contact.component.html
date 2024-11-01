@@ -58,7 +58,7 @@
             </span>
           </mat-error>
         </mat-form-field>
-        
+
         <!-- Checkbox -->
         <div class="checkbox-container">
           <mat-checkbox [(ngModel)]="contactData.privacy" name="privacy" #privacy="ngModel" required>
@@ -70,11 +70,13 @@
           </mat-checkbox>
 
           <!-- Fehlermeldung für Checkbox -->
-          <mat-error *ngIf="!contactData.privacy && (name.touched || email.touched || message.touched)">
-            <span style="color: #f44336;">
-              {{ "CONTACT_COMPONENT.PRIVACY_REQUIRED" | translate }}
-            </span>
-          </mat-error>
+          <div class="error-space">
+            <mat-error *ngIf="!contactData.privacy && (name.touched || email.touched || message.touched)">
+              <span style="color: #f44336; font-size: var(--mat-form-field-subscript-text-size);">
+                {{ "CONTACT_COMPONENT.PRIVACY_REQUIRED" | translate }}
+              </span>
+            </mat-error>
+          </div>
         </div>
 
         <!-- Submit Button -->

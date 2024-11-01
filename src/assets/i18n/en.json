@@ -50,5 +50,33 @@
     },
     "FOOTER": {
         "IMPRINT": "Imprint"
+    },
+    "IMPRINT": {
+        "HEADLINE": "Imprint",
+        "ADRESS_TITLE": "Information according to § 5 TMG",
+        "COUNTRY": "Germany",
+        "CONTACT_TITLE": "Contact",
+        "PHONE": "Phone",
+        "RESPONSIBLE_TITLE": "Responsible for content according to § 55 para. 2 RStV",
+        "LIABILITY_FOR_CONTENT": {
+            "TITLE": "Liability for Content",
+            "PARAGRAPH_1": "As a service provider, we are responsible for our own content on these pages in accordance with § 7 para.1 TMG under general laws. However, according to §§ 8 to 10 TMG, we are not obliged as a service provider to monitor transmitted or stored third-party information or to investigate circumstances indicating illegal activity.",
+            "PARAGRAPH_2": "Obligations to remove or block the use of information under general laws remain unaffected. However, liability in this respect is only possible from the time of knowledge of a specific infringement. Upon notification of such violations, we will remove the content immediately."
+        },
+        "LIABILITY_FOR_LINKS": {
+            "TITLE": "Liability for Links",
+            "PARAGRAPH_1": "Our offer contains links to external websites of third parties, on whose contents we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the linked sites is always responsible for the contents of the linked sites. The linked sites were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking.",
+            "PARAGRAPH_2": "However, permanent content control of the linked pages is not reasonable without concrete evidence of an infringement. Upon notification of violations, we will remove such links immediately."
+        },
+        "COPYRIGHT": {
+            "TITLE": "Copyright",
+            "PARAGRAPH_1": "The content and works created by the site operators on these pages are subject to German copyright law. Reproduction, editing, distribution, and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use.",
+            "PARAGRAPH_2": "Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is marked as such."
+        },
+        "BACK": "back"
+    },
+    "POLICY": {
+        "HEADLINE": "Privacy policy",
+        "BACK": "back"
     }
 }
